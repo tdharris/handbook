@@ -7,7 +7,7 @@ Support Handbook Demo
 2. Install dependencies:
   * Install node modules: `npm install`
   * Install bower components: `bower install`
-3. Launch: `gulp`
+3. Launch: `node bin/www` or dev with live-reload: `gulp`
 4. Connect to browser `http://localhost:3000`
 
 <b>Technologies</b>:
