@@ -15,7 +15,7 @@
     <script src="http://localhost:35729/livereload.js"></script>
   {% endif %}
 </head>
-<body>
+<body data-spy="scroll" data-target=".scrollspy">
 
   {% block content %}{% endblock %}
 

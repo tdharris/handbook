@@ -1,7 +1,7 @@
 {% extends 'layout.swig' %}
 
 {% block content %}
-<div ng-app="handbook" data-spy="scroll" data-target="#myScrollspy">
+<div ng-app="handbook">
 	<nav class="navbar navbar-fixed-top navbar-inverse">
 	  <div class="container">
 	    <div class="navbar-header">
@@ -15,7 +15,7 @@
 	    </div>
 	    <div id="navbar" class="collapse navbar-collapse">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Support Handbook Demo</a></li>
+	        <li class="active"><a href="#">Demo</a></li>
 	      </ul>
 	    </div><!-- /.nav-collapse -->
 	  </div><!-- /.container -->
@@ -38,7 +38,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#">Handbook</a>
+	          <a class="navbar-brand" href="#">Support Handbook</a>
 	        </div>
 
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -73,40 +73,35 @@
 	        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 	      </p>
 	      <div id="content">
-		      <div class="jumbotron">
+		      <div class="jumbotron" ng-show="selectedProduct">
 		        <h1>{{selectedProduct.name}}</h1>
 		      </div>
 
-			<section ng-repeat="section in contentList[selectedProduct.hbu]">
+			<section id ="{{section.name | spaceless}}" ng-repeat="section in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{section.name | spaceless}}">{{section.name}}</a></h2>
-			  <span ng-bind-html="section.content"></span>
-			  <section class="subsection" ng-repeat="subsection in section.subsections">
+			  <div class="sectionContent" ng-bind-html="section.content"></div>
+			  <section id="{{subsection.name | spaceless}}" class="subsection" ng-repeat="subsection in section.subsections">
 			  	<h4><a href="#{{subsection.name | spaceless}}">{{subsection.name}}</a></h4>
-			  	<span ng-bind-html="subsection.content"></span>
+			  	<div class="sectionContent" ng-bind-html="subsection.content"></div>
 			  </section>
-			</section><hr>
+			  <hr>
+			</section>
 
 		    </div>
 	    </div><!--/.col-xs-12.col-sm-9-->
 
-	  </div> <!-- END hb -->
+	</div> <!-- END hb -->
 
-    <nav class="col-xs-6 col-sm-3" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked nav-section" data-spy="affix">
+    <div id="nav-wrapper" class="col-xs-6 col-sm-3 scrollspy">
+      <ul id="nav" class="nav nav-pills nav-stacked nav-section" data-spy="affix">
         <li ng-repeat="section in contentList[selectedProduct.hbu]">
         	<a href="#{{section.name | spaceless}}">{{section.name}}</a>
         	<ul class="nav nav-subsection">
         		<li ng-repeat="subsection in section.subsections"><a href="#{{subsection.name | spaceless}}">{{subsection.name}}</a></li>
         	</ul>
         </li>
-      </div>
-    </nav><!--/.sidebar-offcanvas-->
-
-	  <hr>
-
-	  <footer>
-	    <p>&copy; 2015 Company, Inc.</p>
-	  </footer>
+      </ul>
+    </div><!--/.sidebar-offcanvas-->
 
 	</div><!--/.container-->
 </div>
