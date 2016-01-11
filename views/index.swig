@@ -47,8 +47,8 @@
 	            <div id="select-portfolio" class="form-group">
 	            	<label>Portfolio</label>
 		            <ul class="nya-bs-select" ng-model="selectedPortfolio">
-		            	<li nya-bs-option="portfolio in portfolios">
-		            		<a>{{ portfolio.name }}</a>
+		            	<li nya-bs-option="(portfolioKey, value) in portfolios">
+		            		<a>{{ portfolioKey }}</a>
 		            	</li>
 		            </ul>
 	            </div>
@@ -56,8 +56,8 @@
 	            <div id="select-product" class="form-group pull-right">
 		            <label>Product</label>
 		            <ul class="nya-bs-select" ng-model="selectedProduct">
-		            	<li nya-bs-option="product in selectedPortfolio.products">
-		            		<a>{{ product.name }}</a>
+		            	<li nya-bs-option="(productKey, value) in selectedPortfolio">
+		            		<a>{{ productKey }}</a>
 		            	</li>
 		            </ul>
 	            </div>
@@ -77,12 +77,12 @@
 		        <h1>{{selectedProduct.name}}</h1>
 		      </div>
 
-			<section id ="{{section.name | spaceless}}" ng-repeat="section in contentList[selectedProduct.hbu]">
-			  <h2><a href="#{{section.name | spaceless}}">{{section.name}}</a></h2>
-			  <div class="sectionContent" ng-bind-html="section.content"></div>
-			  <section id="{{subsection.name | spaceless}}" class="subsection" ng-repeat="subsection in section.subsections">
-			  	<h4><a href="#{{subsection.name | spaceless}}">{{subsection.name}}</a></h4>
-			  	<div class="sectionContent" ng-bind-html="subsection.content"></div>
+			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
+			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
+			  <section id="{{subsectionKey | spaceless}}" class="subsection" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
+			    <h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
+			    <div class="sectionContent" ng-bind-html="subsectionValue.content"></div>
 			  </section>
 			  <hr>
 			</section>
@@ -94,10 +94,10 @@
 
     <div id="nav-wrapper" class="col-xs-6 col-sm-3 scrollspy">
       <ul id="nav" class="nav nav-pills nav-stacked nav-section" data-spy="affix">
-        <li ng-repeat="section in contentList[selectedProduct.hbu]">
-        	<a href="#{{section.name | spaceless}}">{{section.name}}</a>
+        <li ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+        	<a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a>
         	<ul class="nav nav-subsection">
-        		<li ng-repeat="subsection in section.subsections"><a href="#{{subsection.name | spaceless}}">{{subsection.name}}</a></li>
+        		<li ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections"><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></li>
         	</ul>
         </li>
       </ul>
