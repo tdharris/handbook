@@ -24,35 +24,41 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', function ($scope,$sce) {
 	$scope.portfolios = {
         "Access": {
             "Access Manager": {
+                "name": "Access Manager",
                 "hbu": "NQ-New",
                 "heritage": "NQ"
             },
             "xAccess": {
-                "hbu": ""
+                "name": "xAccess",
+                "hbu": "NQ-New"
             },
             "PUM": {
-                "hbu": ""
+                "name": "PUM",
+                "hbu": "NQ-New"
             },
             "Secure Login": {
-                "hbu": ""
+                "name": "Secure Login",
+                "hbu": "NQ-New"
             },
             "NAAF": {
-                "hbu": ""
+                "name": "NAAF",
+                "hbu": "NQ-New"
             },
             "SSPR": {
-                "hbu": ""
+                "name": "SSPR",
+                "hbu": "NQ-New"
             },
             "IdentityAccess": {
-                "hbu": ""
+                "name": "IdentityAccess",
+                "hbu": "NQ-New"
             },
             "Account Mgmt Service": {
-                "hbu": ""
+                "name": "Account Mgmt Service",
+                "hbu": "NQ-New"
             }
         },
-        "Product Grp 2": {
-            "product 1": {
+        "Identity": {
 
-            }
         }
     };
 

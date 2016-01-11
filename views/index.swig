@@ -47,8 +47,8 @@
 	            <div id="select-portfolio" class="form-group">
 	            	<label>Portfolio</label>
 		            <ul class="nya-bs-select" ng-model="selectedPortfolio">
-		            	<li nya-bs-option="(key, value) in portfolios">
-		            		<a>{{ key }}</a>
+		            	<li nya-bs-option="(portfolioKey, value) in portfolios">
+		            		<a>{{ portfolioKey }}</a>
 		            	</li>
 		            </ul>
 	            </div>
@@ -73,11 +73,11 @@
 	        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 	      </p>
 	      <div id="content">
-		      <div class="jumbotron">
-		        <h1>{{selectedProduct}}</h1>
+		      <div class="jumbotron" ng-show="selectedProduct">
+		        <h1>{{selectedProduct.name}}</h1>
 		      </div>
 
-			<section id ="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
 			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
 			  <section id="{{subsectionKey | spaceless}}" class="subsection" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
