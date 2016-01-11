@@ -73,14 +73,14 @@
 	        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 	      </p>
 	      <div id="content">
-		      <div class="jumbotron" ng-show="selectedProduct">
-		        <h1>{{selectedProduct.name}}</h1>
+		      <div class="jumbotron">
+		        <h1>{{selectedProduct}}</h1>
 		      </div>
 
 			<section id ="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
 			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
-			  <section id="{{subsectionKey | spaceless}}" class="subsection" ng-repeat="(subsectionKey, subsectionValue) in contentList[selectedProduct.hbu].subsections">
+			  <section id="{{subsectionKey | spaceless}}" class="subsection" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
 			    <h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
 			    <div class="sectionContent" ng-bind-html="subsectionValue.content"></div>
 			  </section>
@@ -94,10 +94,10 @@
 
     <div id="nav-wrapper" class="col-xs-6 col-sm-3 scrollspy">
       <ul id="nav" class="nav nav-pills nav-stacked nav-section" data-spy="affix">
-        <li ng-repeat="section in contentList[selectedProduct.hbu]">
-        	<a href="#{{section.name | spaceless}}">{{section.name}}</a>
+        <li ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+        	<a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a>
         	<ul class="nav nav-subsection">
-        		<li ng-repeat="subsection in section.subsections"><a href="#{{subsection.name | spaceless}}">{{subsection.name}}</a></li>
+        		<li ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections"><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></li>
         	</ul>
         </li>
       </ul>
