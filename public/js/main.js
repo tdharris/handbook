@@ -9,7 +9,7 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', function ($scope,$sce) {
         $scope.selectedProduct = "";
 	};
 
-	// Data below (instead of using a db, which obviously would be better)
+	// Data below (instead of using a db)
 	$scope.portfolios = {
         "Access": {
             "Access Manager": {
@@ -897,12 +897,14 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', function ($scope,$sce) {
                         "content": "If Heritage Novell product then follow the NV Handbook, if Heritage NetIQ then follow the NetIQ handbook."
                     },
                     "After Hours": {
+                        "heritage": "true",
                         "content": "If Heritage Novell product then follow the NV Handbook, if Heritage NetIQ then follow the NetIQ handbook."
                     },
                     "Information to Include in your Service Request": {
                         "content": "WHAT is the problem?<ul><li>Which version of the product (or products) is having the problem?</li><li>Which support pack level is loaded?</li><li>What error messages (if any) are returned?</li><li>What troubleshooting steps have already been performed?</li></ul>WHERE does the problem occur?<ul><li>What is the environment?</li><li>On which sites, servers, directories or clients does the problem occur?</li><li>Where does the problem not occur?</li></ul>WHEN does the problem occur?<ul><li>When did the problem first occur?</li><li>Were changes made prior to the problem occurring? If so, what (installation of products, support pack, network changes, and so forth, for example)?</li></ul>WHAT is the extent of the problem?<ul><li>Is a workaround available?</li><li>What is the business impact of the problem?</li></ul>"
                     },
                     "Checking the Status of Open or Resolved Service Requests": {
+                        "heritage": "true",
                         "content": "If Heritage Novell product then follow the NV Handbook, if Heritage NetIQ then follow the NetIQ handbook."
                     },
                     "Closing a Service Request": {

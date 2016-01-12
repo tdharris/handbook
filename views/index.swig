@@ -78,9 +78,15 @@
 			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
 			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
-			  <section id="{{subsectionKey | spaceless}}" class="subsection" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
-			    <h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
-			    <div class="sectionContent" ng-bind-html="subsectionValue.content"></div>
+			  <section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
+			    <div ng-switch-when="true">
+			    	<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
+			    	<div class="sectionContent" ng-bind-html="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content"></div>
+			    </div>
+			    <div ng-switch-default>
+			    	<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
+			    	<div class="sectionContent" ng-bind-html="subsectionValue.content"></div>
+			    </div>
 			  </section>
 			  <hr>
 			</section>
