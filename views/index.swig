@@ -45,8 +45,7 @@
 	          <form class="navbar-form navbar-left">
 	            
 	            <div id="select-portfolio" class="form-group">
-	            	<label>Portfolio</label>
-		            <ul class="nya-bs-select" ng-model="selectedPortfolio">
+		            <ul class="nya-bs-select" ng-model="selectedPortfolio" title="Select Portfolio" data-live-search="true">
 		            	<li nya-bs-option="(portfolioKey, value) in portfolios">
 		            		<a>{{ portfolioKey }}</a>
 		            	</li>
@@ -54,8 +53,7 @@
 	            </div>
 
 	            <div id="select-product" class="form-group pull-right">
-		            <label>Product</label>
-		            <ul class="nya-bs-select" ng-model="selectedProduct">
+		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true">
 		            	<li nya-bs-option="(productKey, value) in selectedPortfolio">
 		            		<a>{{ productKey }}</a>
 		            	</li>
