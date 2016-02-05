@@ -5,10 +5,22 @@ body {
   min-height: 600px;
 }
 
+.editable-click {
+  color: inherit;
+  border-bottom: 0;
+}
+
+.welcomeTitle {
+  color: #00b8d4;
+}
+
+.editable-click:hover, a.editable-click:hover {
+  color: inherit;
+}
+
 a {
   color: #00B7FF;
 }
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;

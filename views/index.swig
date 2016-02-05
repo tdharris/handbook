@@ -38,7 +38,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#">Support Handbook</a>
+	          <a class="navbar-brand" href="" ng-click="clearDropdowns()">Support Handbook</a>
 	        </div>
 
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -52,7 +52,7 @@
 		            </ul>
 	            </div>
 
-	            <div id="select-product" class="form-group pull-right">
+	            <div id="select-product" class="form-group">
 		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true">
 		            	<li nya-bs-option="(productKey, value) in selectedPortfolio">
 		            		<a>{{ productKey }}</a>
@@ -75,17 +75,35 @@
 		        <h1>{{selectedProduct.name}}</h1>
 		      </div>
 
+		    <div ng-if="!selectedProduct" class="container" style="width:70%;">
+		    	<h3 class="welcomeTitle">Welcome to Micro Focus Customer Care</h3>
+		    	<br>
+		    	<p>Thank you for choosing Micro Focus.</p>
+		    	<p>A key component of any Micro Focus product is the level of support you will enjoy going forward. This document will help you get the most of that support.</p>
+		    	<p>Micro Focus is committed to maintaining the highest level of customer satisfaction by providing quality solutions to customer issues at all levels. And there are many ways to access this support.</p>
+		    	<p>Our experienced and dedicated engineers will provide comprehensive technical support, usually in local languages, in your region.</p>
+		    	<p>To ensure we maintain the highest levels of performance, the final step with every incident closed is an email survey. It is your opportunity to provide feedback on our performance. In the unusual event of a low score, we follow up to help us improve our service.</p>
+		    	<p>We are here to help ensure your success, every step of the way.</p><br>
+		    	<p>
+		    		Kind regards,<br>
+		    		<span style="font-size:2em; font-family: 'Allura', cursive;">Owen Finn</span><br>
+		    		Owen Finn<br>
+					VP, Worldwide Maintenance Renewals & Customer Care<br>
+		    	</p>
+		    </div>
+
+		    {# Content #}
 			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
-			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
+			  <div class="sectionContent" ng-bind-html="sectionValue.content || ' ... '" editable-textarea="sectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()"></div>
 			  <section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
 			    <div ng-switch-when="true">
 			    	<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
-			    	<div class="sectionContent" ng-bind-html="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content"></div>
+			    	<div class="sectionContent" editable-textarea="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content || ' ... '"></div>
 			    </div>
 			    <div ng-switch-default>
 			    	<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
-			    	<div class="sectionContent" ng-bind-html="subsectionValue.content"></div>
+			    	<div class="sectionContent" editable-textarea="subsectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="subsectionValue.content || ' ... '"></div>
 			    </div>
 			  </section>
 			  <hr>
@@ -95,6 +113,9 @@
 	    </div><!--/.col-xs-12.col-sm-9-->
 
 	</div> <!-- END hb -->
+	<div id="incident" class="hide">
+		<i>Support Incident, Service Incident, Service Request</i><p>Assistance with one issue, problem, or question relating to the use or installation of a Micro Focus product or product component, regardless of the number of communications required. A single incident is a problem that cannot be broken down into subordinate problems. If a problem consists of subordinate problems, each is considered a separate incident. Micro Focus considers access to a support engineer at least one incident.</p>
+	</div>
 
     <div id="nav-wrapper" class="col-xs-6 col-sm-3 scrollspy">
       <ul id="nav" class="nav nav-pills nav-stacked nav-section" data-spy="affix">
