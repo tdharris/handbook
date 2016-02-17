@@ -1,4 +1,4 @@
-var myApp = angular.module('handbook', ['nya.bootstrap.select', 'ngSanitize', 'xeditable']);
+var myApp = angular.module('handbook', ['nya.bootstrap.select', 'ngSanitize', 'xeditable', 'angular.filter']);
 
 myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$sce,$http) {
 
@@ -7,7 +7,8 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$s
     method: 'GET',
     url: '/getPortfolioData'
     }).then(function successCallback(response) {
-      $scope.portfolios = response.data;
+      $scope.portfolios = response.data.portfolios;
+      $scope.products = response.data.products;
       console.log(response);
     }, function errorCallback(response) {
       console.log(response);
@@ -32,7 +33,7 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$s
 	};
 
   // Update data (send to server for saving)
-  $scope.updateContentData = function() {
+  $scope.updateContentData = function(data) {
     return $http.post('/editContentData', $scope.contentList);
   };
 
@@ -46,6 +47,11 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$s
     return !!obj
   };
 
+  $scope.updatePortfolio = function(selectedProduct) {
+    $scope.selectedPortfolio = selectedProduct.portfolio;
+    console.log(selectedProduct);
+  };
+
 }]);
 
 // Helper filter to remove spaces (used in ids and hrefs)
@@ -56,6 +62,8 @@ myApp.filter('spaceless',function() {
     }
   }
 });
+
+
 
 // Configure 'xeditable' for in-place editing
 myApp.run(function(editableOptions) {

@@ -1,523 +1,633 @@
 {
-    "Access": {
-        "Access Manager": {
-            "name": "Access Manager",
-            "hbu": "NQ-New",
-            "heritage": "NQ"
-        },
-        "xAccess": {
-            "name": "xAccess",
-            "hbu": "NQ-New"
-        },
-        "PUM": {
-            "name": "PUM",
-            "hbu": "NQ-New"
-        },
-        "Secure Login": {
-            "name": "Secure Login",
-            "hbu": "NQ-New"
-        },
-        "NAAF": {
-            "name": "NAAF",
-            "hbu": "NQ-New"
-        },
-        "SSPR": {
-            "name": "SSPR",
-            "hbu": "NQ-New"
-        },
-        "IdentityAccess": {
-            "name": "IdentityAccess",
-            "hbu": "NQ-New"
-        },
-        "Account Mgmt Service": {
-            "name": "Account Mgmt Service",
-            "hbu": "NQ-New"
-        }
-    },
-    "MF Cobol": {
-        "MF COBOL": {
-            "name": "MF COBOL",
-            "hbu": "MF"
-        },
-        "ACUCOBOL": {
-            "name": "ACUCOBOL",
-            "hbu": "MF"
-        },
-        "RM/COBOL": {
-            "name": "RM/COBOL",
-            "hbu": "MF"
-        },
-        "XCBC": {
-            "name": "XCBC",
-            "hbu": "",
-            "heritage": "MF"
-        },
-        "Visual COBOL": {
-            "name": "Visual COBOL",
-            "hbu": "MF"
-        }
-    },
-    "MF Enterprise": {
-        "MF EEE": {
-            "name": "MF EEE",
-            "hbu": "MF"
-        },
-        "Enterprise Server": {
-            "name": "Enterprise Server",
-            "hbu": "MF"
-        },
-        "Enterprise Developer": {
-            "name": "Enterprise Developer",
-            "hbu": "MF"
-        },
-        "Enterprise Test Server": {
-            "name": "Enterprise Test Server",
-            "hbu": "MF"
-        },
-        "Data Express": {
-            "name": "Data Express",
-            "hbu": "MF"
-        },
-        "Enterprise Analyzer": {
-            "name": "Enterprise Analyzer",
-            "hbu": "MF"
-        },
-        "Enterprise View": {
-            "name": "Enterprise View",
-            "hbu": "MF"
-        },
-        "Revolve": {
-            "name": "Revolve",
-            "hbu": "MF"
-        }
-    },
-    "Niche": {
-        "Together": {
-            "name": "Together",
-            "hbu": "MF"
-        },
-        "DevPartner": {
-            "name": "DevPartner",
-            "hbu": "MF"
-        },
-        "QADirector": {
-            "name": "QADirector",
-            "hbu": "MF"
-        },
-        "QALoad": {
-            "name": "QALoad",
-            "hbu": "MF"
-        },
-        "TestPartner": {
-            "name": "TestPartner",
-            "hbu": "MF"
-        },
-        "Other/Old Silk": {
-            "name": "Other/Old Silk",
-            "hbu": "MF"
-        },
-        "Team Define": {
-            "name": "Team Define",
-            "hbu": "MF"
-        },
-        "Optimal Trace": {
-            "name": "Optimal Trace",
-            "hbu": "MF"
-        }
-    },
-    "CORBA": {
-        "VisiBroker": {
-            "name": "VisiBroker",
-            "hbu": "MF"
-        },
-        "AppServer": {
-            "name": "AppServer",
-            "hbu": "MF"
-        },
-        "TAO": {
-            "name": "TAO",
-            "hbu": "MF"
-        },
-        "JacORB": {
-            "name": "JacORB",
-            "hbu": "MF"
-        },
-        "CORBA-Services": {
-            "name": "CORBA-Services",
-            "hbu": "MF"
-        },
-        "Security": {
-            "name": "Security",
-            "hbu": "MF"
-        },
-        "RTOrb Java": {
-            "name": "RTOrb Java",
-            "hbu": "MF"
-        },
-        "RTOrb Ada": {
-            "name": "RTOrb Ada",
-            "hbu": "MF"
-        },
-        "Artix": {
-            "name": "Artix",
-            "hbu": "MF"
-        },
-        "Orbacus": {
-            "name": "Orbacus",
-            "hbu": "MF"
-        },
-        "Orbiz": {
-            "name": "Orbiz",
-            "hbu": "MF"
-        }
-
-    },
-    "Borland": {
-        "Caliber Atlas": {
-            "name": "Caliber Atlas",
-            "hbu": "MF"
-        },
-        "StarTeam": {
-            "name": "StarTeam",
-            "hbu": "MF"
-        },
-        "AccuRev": {
-            "name": "AccuRev",
-            "hbu": "MF"
-        },
-        "GitCentric": {
-            "name": "GitCentric",
-            "hbu": "MF"
-        },
-        "AccuReplica": {
-            "name": "AccuReplica",
-            "hbu": "MF"
-        },
-        "AccuWork": {
-            "name": "AccuWork",
-            "hbu": "MF"
-        },
-        "AccuSync": {
-            "name": "AccuSync",
-            "hbu": "MF"
-        },
-        "AccuBridge": {
-            "name": "AccuBridge",
-            "hbu": "MF"
-        },
-        "ClearCase": {
-            "name": "ClearCase",
-            "hbu": "MF"
-        },
-        "Adapater": {
-            "name": "Adapater",
-            "hbu": "MF"
-        },
-        "Migration": {
-            "name": "Migration",
-            "hbu": "MF"
-        },
-        "SilkCentral Test Manager": {
-            "name": "SilkCentral Test Manager",
-            "hbu": "MF"
-        },
-        "Silk Mobile": {
-            "name": "Silk Mobile",
-            "hbu": "MF"
-        },
-        "SilkPerformer": {
-            "name": "SilkPerformer",
-            "hbu": "MF"
-        },
-        "SilkPerformer Cloudburst": {
-            "name": "SilkPerformer Cloudburst",
-            "hbu": "MF"
-        },
-        "SilkPerformer Diagnostics": {
-            "name": "SilkPerformer Diagnostics",
-            "hbu": "MF"
-        },
-        "SilkTest": {
-            "name": "SilkTest",
-            "hbu": "MF"
-        },
-        "TM ART": {
-            "name": "TM ART",
-            "hbu": "MF"
-        },
-        "SilkCentral Connect": {
-            "name": "SilkCentral Connect",
-            "hbu": "MF"
-        }
-    },
-    "ZENWorks": {
-        "ZENworks Configuration Manager": {
-            "name": "ZENworks Configuration Manager",
-            "hbu": "NV"
-        },
-        "ZENworks Patch Management": {
-            "name": "ZENworks Patch Management",
-            "hbu": "NV"
-        },
-        "ZENworks Asset Management": {
-            "name": "ZENworks Asset Management",
-            "hbu": "NV"
-        },
-        "ZENworks Application Virtulization": {
-            "name": "ZENworks Application Virtulization",
-            "hbu": "NV"
-        },
-        "ZENworks Endpoint Security Management": {
-            "name": "ZENworks Endpoint Security Management",
-            "hbu": "NV"
-        },
-        "ZENworks Full Disk Encryption": {
-            "name": "ZENworks Full Disk Encryption",
-            "hbu": "NV"
-        },
-        "ZENworks Mobile Management": {
-            "name": "ZENworks Mobile Management",
-            "hbu": "NV"
-        },
-        "Novell Service Desk": {
-            "name": "Novell Service Desk",
-            "hbu": "NV"
-        },
-        "ALA/SLA Bundle-ZENworks": {
-            "name": "ALA/SLA Bundle-ZENworks",
-            "hbu": "NV"
-        }
-    },
-    "Host Connectivity": {
-        "Verastream": {
-            "name": "Verastream",
-            "hbu": "AQ"
-        },
-        "Databridge": {
-            "name": "Databridge",
-            "hbu": "AQ"
-        },
-        "FileXpress": {
-            "name": "FileXpress",
-            "hbu": "AQ"
-        },
-        "Reflection": {
-            "name": "Reflection",
-            "hbu": "AQ"
-        },
-        "Management and Security Services MSS": {
-            "name": "Management and Security Services MSS",
-            "hbu": "AQ"
-        },
-        "Reflection ZFE": {
-            "name": "Reflection ZFE",
-            "hbu": "AQ"
-        },
-        "Reflection for Secure IT": {
-            "name": "Reflection for Secure IT",
-            "hbu": "AQ"
-        },
-        "Extra!": {
-            "name": "Extra!",
-            "hbu": "AQ"
-        },
-        "InfoConnect": {
-            "name": "InfoConnect",
-            "hbu": "AQ"
-        },
-        "Rumba": {
-            "name": "Rumba",
-            "hbu": "MF"
-        },
-        "EnterpriseLink": {
-            "name": "EnterpriseLink",
-            "hbu": "MF"
-        },
-        "OnWeb": {
-            "name": "OnWeb",
-            "hbu": "MF"
-        },
-        "ViewNow": {
-            "name": "ViewNow",
-            "hbu": "MF"
-        },
-        "Web-to-Host": {
-            "name": "Web-to-Host",
-            "hbu": "MF"
-        }
-    },
-    "Nov/Attm Other": {
-        "Border Manager": {
-            "name": "Border Manager",
-            "hbu": "NV"
-        },
-        "Legacy/Royalties": {
-            "name": "Legacy/Royalties",
-            "hbu": "NV"
-        },
-        "Nest/Unix Related": {
-            "name": "Nest/Unix Related",
-            "hbu": "NV"
-        },
-        "Luminet": {
-            "name": "Luminet",
-            "hbu": "AQ"
-        }
-    },
-    "Collaboration": {
-        "GroupWise": {
-            "name": "GroupWise",
-            "hbu": "NV"
-        },
-        "Vibe": {
-            "name": "Vibe",
-            "hbu": "NV"
-        }
-    },
-    "File and Networking": {
+    "portfolios": [ 
+	    "Access",
+	    "MF Cobol",
+	    "MF Enterprise",
+	    "Niche",
+	    "CORBA",
+	    "Borland",
+	    "ZENWorks",
+	    "Host Connectivity",
+	    "Nov/Attm Other",
+	    "Collaboration",
+	    "File and Networking",
+	    "Security",
+	    "Workload & Virtualization",
+	    "Data Center",
+	    "Identity"
+	],
+	"products": {
+		"Access Manager": {
+	        "name": "Access Manager",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New",
+	        "heritage": "NQ"
+	    },
+	    "xAccess": {
+	        "name": "xAccess",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New"
+	    },
+	    "PUM": {
+	        "name": "PUM",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New"
+	    },
+	    "Secure Login": {
+	        "name": "Secure Login",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New"
+	    },
+	    "NAAF": {
+	        "name": "NAAF",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New"
+	    },
+	    "SSPR": {
+	        "name": "SSPR",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New"
+	    },
+	    "IdentityAccess": {
+	        "name": "IdentityAccess",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New"
+	    },
+	    "Account Mgmt Service": {
+	        "name": "Account Mgmt Service",
+	        "portfolio": "Access",
+	        "hbu": "NQ-New"
+	    },
+	    "MF COBOL": {
+	        "name": "MF COBOL",
+	        "portfolio": "MF Cobol",
+	        "hbu": "MF"
+	    },
+	    "ACUCOBOL": {
+	        "name": "ACUCOBOL",
+	        "portfolio": "MF Cobol",
+	        "hbu": "MF"
+	    },
+	    "RM/COBOL": {
+	        "name": "RM/COBOL",
+	        "portfolio": "MF Cobol",
+	        "hbu": "MF"
+	    },
+	    "XCBC": {
+	        "name": "XCBC",
+	        "portfolio": "MF Cobol",
+	        "hbu": "",
+	        "heritage": "MF"
+	    },
+	    "Visual COBOL": {
+	        "name": "Visual COBOL",
+	        "portfolio": "MF Cobol",
+	        "hbu": "MF"
+	    },
+	    "MF EEE": {
+	        "name": "MF EEE",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	    "Enterprise Server": {
+	        "name": "Enterprise Server",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	    "Enterprise Developer": {
+	        "name": "Enterprise Developer",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	    "Enterprise Test Server": {
+	        "name": "Enterprise Test Server",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	    "Data Express": {
+	        "name": "Data Express",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	    "Enterprise Analyzer": {
+	        "name": "Enterprise Analyzer",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	    "Enterprise View": {
+	        "name": "Enterprise View",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	    "Revolve": {
+	        "name": "Revolve",
+	        "portfolio": "MF Enterprise",
+	        "hbu": "MF"
+	    },
+	     "Together": {
+	        "name": "Together",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "DevPartner": {
+	        "name": "DevPartner",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "QADirector": {
+	        "name": "QADirector",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "QALoad": {
+	        "name": "QALoad",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "TestPartner": {
+	        "name": "TestPartner",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "Other/Old Silk": {
+	        "name": "Other/Old Silk",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "Team Define": {
+	        "name": "Team Define",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "Optimal Trace": {
+	        "name": "Optimal Trace",
+	        "portfolio": "Niche",
+	        "hbu": "MF"
+	    },
+	    "VisiBroker": {
+	        "name": "VisiBroker",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "AppServer": {
+	        "name": "AppServer",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "TAO": {
+	        "name": "TAO",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "JacORB": {
+	        "name": "JacORB",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "CORBA-Services": {
+	        "name": "CORBA-Services",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "Security": {
+	        "name": "Security",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "RTOrb Java": {
+	        "name": "RTOrb Java",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "RTOrb Ada": {
+	        "name": "RTOrb Ada",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "Artix": {
+	        "name": "Artix",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "Orbacus": {
+	        "name": "Orbacus",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "Orbiz": {
+	        "name": "Orbiz",
+	        "portfolio": "CORBA",
+	        "hbu": "MF"
+	    },
+	    "Caliber Atlas": {
+	        "name": "Caliber Atlas",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "StarTeam": {
+	        "name": "StarTeam",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "AccuRev": {
+	        "name": "AccuRev",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "GitCentric": {
+	        "name": "GitCentric",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "AccuReplica": {
+	        "name": "AccuReplica",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "AccuWork": {
+	        "name": "AccuWork",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "AccuSync": {
+	        "name": "AccuSync",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "AccuBridge": {
+	        "name": "AccuBridge",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "ClearCase": {
+	        "name": "ClearCase",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "Adapater": {
+	        "name": "Adapater",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "Migration": {
+	        "name": "Migration",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "SilkCentral Test Manager": {
+	        "name": "SilkCentral Test Manager",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "Silk Mobile": {
+	        "name": "Silk Mobile",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "SilkPerformer": {
+	        "name": "SilkPerformer",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "SilkPerformer Cloudburst": {
+	        "name": "SilkPerformer Cloudburst",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "SilkPerformer Diagnostics": {
+	        "name": "SilkPerformer Diagnostics",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "SilkTest": {
+	        "name": "SilkTest",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "TM ART": {
+	        "name": "TM ART",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "SilkCentral Connect": {
+	        "name": "SilkCentral Connect",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "ZENworks Configuration Manager": {
+	        "name": "ZENworks Configuration Manager",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "ZENworks Patch Management": {
+	        "name": "ZENworks Patch Management",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "ZENworks Asset Management": {
+	        "name": "ZENworks Asset Management",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "ZENworks Application Virtulization": {
+	        "name": "ZENworks Application Virtulization",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "ZENworks Endpoint Security Management": {
+	        "name": "ZENworks Endpoint Security Management",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "ZENworks Full Disk Encryption": {
+	        "name": "ZENworks Full Disk Encryption",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "ZENworks Mobile Management": {
+	        "name": "ZENworks Mobile Management",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "Novell Service Desk": {
+	        "name": "Novell Service Desk",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "ALA/SLA Bundle-ZENworks": {
+	        "name": "ALA/SLA Bundle-ZENworks",
+	        "portfolio": "ZENWorks",
+	        "hbu": "NV"
+	    },
+	    "Verastream": {
+	        "name": "Verastream",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "Databridge": {
+	        "name": "Databridge",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "FileXpress": {
+	        "name": "FileXpress",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "Reflection": {
+	        "name": "Reflection",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "Management and Security Services MSS": {
+	        "name": "Management and Security Services MSS",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "Reflection ZFE": {
+	        "name": "Reflection ZFE",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "Reflection for Secure IT": {
+	        "name": "Reflection for Secure IT",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "Extra!": {
+	        "name": "Extra!",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "InfoConnect": {
+	        "name": "InfoConnect",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "AQ"
+	    },
+	    "Rumba": {
+	        "name": "Rumba",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "MF"
+	    },
+	    "EnterpriseLink": {
+	        "name": "EnterpriseLink",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "MF"
+	    },
+	    "OnWeb": {
+	        "name": "OnWeb",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "MF"
+	    },
+	    "ViewNow": {
+	        "name": "ViewNow",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "MF"
+	    },
+	    "Web-to-Host": {
+	        "name": "Web-to-Host",
+	        "portfolio": "Host Connectivity",
+	        "hbu": "MF"
+	    },
+	    "Border Manager": {
+	        "name": "Border Manager",
+	        "portfolio": "Nov/Attm Other",
+	        "hbu": "NV"
+	    },
+	    "Legacy/Royalties": {
+	        "name": "Legacy/Royalties",
+	        "portfolio": "Nov/Attm Other",
+	        "hbu": "NV"
+	    },
+	    "Nest/Unix Related": {
+	        "name": "Nest/Unix Related",
+	        "portfolio": "Nov/Attm Other",
+	        "hbu": "NV"
+	    },
+	    "Luminet": {
+	        "name": "Luminet",
+	        "portfolio": "Nov/Attm Other",
+	        "hbu": "AQ"
+	    },
+	    "GroupWise": {
+	        "name": "GroupWise",
+	        "portfolio": "Collaboration",
+	        "hbu": "NV"
+	    },
+	    "Vibe": {
+	        "name": "Vibe",
+	        "portfolio": "Collaboration",
+	        "hbu": "NV"
+	    },
         "OES": {
-            "name": "OES",
-            "hbu": "NV"
-        },
-        "Filr": {
-            "name": "Filr",
-            "hbu": "NV"
-        },
-        "iPrint": {
-            "name": "iPrint",
-            "hbu": "NV"
-        },
-        "Cluster Services/BCC": {
-            "name": "Cluster Services/BCC",
-            "hbu": "NV"
-        },
-        "NetWare": {
-            "name": "NetWare",
-            "hbu": "NV"
-        },
-        "NOWS/NOWS SBE": {
-            "name": "NOWS/NOWS SBE",
-            "hbu": "NV"
-        },
-        "File Management Suite": {
-            "name": "File Management Suite",
-            "hbu": "NV"
-        },
-        "File Reporter": {
-            "name": "File Reporter",
-            "hbu": "NV"
-        },
-        "Storage Manager": {
-            "name": "Storage Manager",
-            "hbu": "NV"
-        },
-        "Dynamic File Services": {
-            "name": "Dynamic File Services",
-            "hbu": "NV"
-        },
-        "ALA/SLA Bundle": {
-            "name": "ALA/SLA Bundle",
-            "hbu": "NV"
-        }
-    },
-    "Security": {
-        "Config Manager": {
-            "name": "Config Manager",
-            "hbu": "NQ"
-        },
-        "Sentinel": {
-            "name": "Sentinel",
-            "hbu": "NV"
-        },
-        "Change Guardian": {
-            "name": "Change Guardian",
-            "hbu": "NQ"
-        },
-        "CMP": {
-            "name": "CMP",
-            "hbu": "NQ"
-        },
-        "iSeries": {
-            "name": "iSeries",
-            "hbu": "NQ"
-        }
-    },
-    "Workload & Virtualization": {
-        "Cloud Manager": {
-            "name": "Cloud Manager",
-            "hbu": "NV"
-        },
-        "Forge": {
-            "name": "Forge",
-            "hbu": "NQ"
-        },
-        "Migrate": {
-            "name": "Migrate",
-            "hbu": "NQ"
-        },
-        "Protect": {
-            "name": "Protect",
-            "hbu": "NQ"
-        },
-        "Recon": {
-            "name": "Recon",
-            "hbu": "NQ"
-        }
-    },
-    "Data Center": {
-        "AppManager": {
-            "name": "AppManager",
-            "hbu": "NQ"
-        },
-        "Unix": {
-            "name": "Unix",
-            "hbu": "NQ"
-        },
-        "VoIP": {
-            "name": "VoIP",
-            "hbu": "NQ"
-        },
-        "Aegis": {
-            "name": "Aegis",
-            "hbu": "NQ"
-        },
-        "Operations Center": {
-            "name": "Operations Center",
-            "hbu": "NQ"
-        }
-    },
-    "Identity": {
-        "IDM Advanced Edition": {
-            "name": "IDM Advanced Edition",
-            "hbu": "NQ-New"
-        },
-        "IDM Standard Edition": {
-            "name": "IDM Standard Edition",
-            "hbu": "NQ-New"
-        },
-        "Other IDM": {
-            "name": "Other IDM",
-            "hbu": "NQ-New"
-        },
-        "ALA/SLA Bundle - Identity": {
-            "name": "ALA/SLA Bundle - Identity",
-            "hbu": "NQ-New"
-        },
-        "DRA": {
-            "name": "DRA",
-            "hbu": "NQ"
-        },
-        "eDir": {
-            "name": "eDir",
-            "hbu": "NQ-New"
-        },
-        "Access Governance": {
-            "name": "Access Governance",
-            "hbu": "NQ-New"
-        },
-        "Access Review": {
-            "name": "Access Review",
-            "hbu": "NQ-New"
-        }
-    }
+	        "name": "OES",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "Filr": {
+	        "name": "Filr",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "iPrint": {
+	        "name": "iPrint",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "Cluster Services/BCC": {
+	        "name": "Cluster Services/BCC",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "NetWare": {
+	        "name": "NetWare",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "NOWS/NOWS SBE": {
+	        "name": "NOWS/NOWS SBE",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "File Management Suite": {
+	        "name": "File Management Suite",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "File Reporter": {
+	        "name": "File Reporter",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "Storage Manager": {
+	        "name": "Storage Manager",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "Dynamic File Services": {
+	        "name": "Dynamic File Services",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "ALA/SLA Bundle": {
+	        "name": "ALA/SLA Bundle",
+	        "portfolio": "File and Networking",
+	        "hbu": "NV"
+	    },
+	    "Config Manager": {
+	        "name": "Config Manager",
+	        "portfolio": "Security",
+	        "hbu": "NQ"
+	    },
+	    "Sentinel": {
+	        "name": "Sentinel",
+	        "portfolio": "Security",
+	        "hbu": "NV"
+	    },
+	    "Change Guardian": {
+	        "name": "Change Guardian",
+	        "portfolio": "Security",
+	        "hbu": "NQ"
+	    },
+	    "CMP": {
+	        "name": "CMP",
+	        "portfolio": "Security",
+	        "hbu": "NQ"
+	    },
+	    "iSeries": {
+	        "name": "iSeries",
+	        "portfolio": "Security",
+	        "hbu": "NQ"
+	    },
+	    "Cloud Manager": {
+	        "name": "Cloud Manager",
+	        "portfolio": "Workload & Virtualization",
+	        "hbu": "NV"
+	    },
+	    "Forge": {
+	        "name": "Forge",
+	        "portfolio": "Workload & Virtualization",
+	        "hbu": "NQ"
+	    },
+	    "Migrate": {
+	        "name": "Migrate",
+	        "portfolio": "Workload & Virtualization",
+	        "hbu": "NQ"
+	    },
+	    "Protect": {
+	        "name": "Protect",
+	        "portfolio": "Workload & Virtualization",
+	        "hbu": "NQ"
+	    },
+	    "Recon": {
+	        "name": "Recon",
+	        "portfolio": "Workload & Virtualization",
+	        "hbu": "NQ"
+	    },
+	    "AppManager": {
+	        "name": "AppManager",
+	        "portfolio": "Data Center",
+	        "hbu": "NQ"
+	    },
+	    "Unix": {
+	        "name": "Unix",
+	        "portfolio": "Data Center",
+	        "hbu": "NQ"
+	    },
+	    "VoIP": {
+	        "name": "VoIP",
+	        "portfolio": "Data Center",
+	        "hbu": "NQ"
+	    },
+	    "Aegis": {
+	        "name": "Aegis",
+	        "portfolio": "Data Center",
+	        "hbu": "NQ"
+	    },
+	    "Operations Center": {
+	        "name": "Operations Center",
+	        "portfolio": "Data Center",
+	        "hbu": "NQ"
+	    },
+	     "IDM Advanced Edition": {
+	        "name": "IDM Advanced Edition",
+	        "portfolio": "Identity",
+	        "hbu": "NQ-New"
+	    },
+	    "IDM Standard Edition": {
+	        "name": "IDM Standard Edition",
+	        "portfolio": "Identity",
+	        "hbu": "NQ-New"
+	    },
+	    "Other IDM": {
+	        "name": "Other IDM",
+	        "portfolio": "Identity",
+	        "hbu": "NQ-New"
+	    },
+	    "ALA/SLA Bundle - Identity": {
+	        "name": "ALA/SLA Bundle - Identity",
+	        "portfolio": "Identity",
+	        "hbu": "NQ-New"
+	    },
+	    "DRA": {
+	        "name": "DRA",
+	        "portfolio": "Identity",
+	        "hbu": "NQ"
+	    },
+	    "eDir": {
+	        "name": "eDir",
+	        "portfolio": "Identity",
+	        "hbu": "NQ-New"
+	    },
+	    "Access Governance": {
+	        "name": "Access Governance",
+	        "portfolio": "Identity",
+	        "hbu": "NQ-New"
+	    },
+	    "Access Review": {
+	        "name": "Access Review",
+	        "portfolio": "Identity",
+	        "hbu": "NQ-New"
+	    }
+	}
 }

@@ -48,8 +48,11 @@ router.post('/editContentData', function(req, res) {
 
 		    // re-save the file
 		    jsonUtil.writeJson(contentData, json, function (err) {
-		      if (err) console.log(err);
-		      else res.sendStatus(200);
+				if (err) {
+					console.log(err);
+					res.send(500, 'Problem saving data: ' + err);
+				}
+				else res.sendStatus(200);
 		    });
 		}
 	});

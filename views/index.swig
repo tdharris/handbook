@@ -43,19 +43,28 @@
 
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	          <form class="navbar-form navbar-left">
-	            
-	            <div id="select-portfolio" class="form-group">
+
+	            {# <div id="select-portfolio" class="form-group">
 		            <ul class="nya-bs-select" ng-model="selectedPortfolio" title="Select Portfolio" data-live-search="true">
-		            	<li nya-bs-option="(portfolioKey, value) in portfolios">
-		            		<a>{{ portfolioKey }}</a>
+		            	<li nya-bs-option="portfolio in portfolios">
+		            		<a>{{ portfolio }}</a>
 		            	</li>
 		            </ul>
 	            </div>
 
 	            <div id="select-product" class="form-group">
 		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true">
-		            	<li nya-bs-option="(productKey, value) in selectedPortfolio">
-		            		<a>{{ productKey }}</a>
+		            	<li nya-bs-option="product in products | searchField: 'portfolio' | filter: selectedPortfolio">
+		            		<a ng-click="updatePortfolio(product)">{{ product.name }}</a>
+		            	</li>
+		            </ul>
+	            </div> #}
+
+	            <div id="select-product" class="form-group">
+		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true">
+		            	<li nya-bs-option="product in products group by product.portfolio">
+		            		<span class="dropdown-header">{{$group}}</span>
+		            		<a ng-click="updatePortfolio(product)">{{ product.name }}</a>
 		            	</li>
 		            </ul>
 	            </div>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="handbook demo" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="book.png" />
   <title>[[ title ]]</title>
 
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css" />
@@ -13,9 +14,9 @@
   <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 
-  {% if ENV_DEVELOPMENT %}
+  {# {% if ENV_DEVELOPMENT %}
     <script src="http://localhost:35729/livereload.js"></script>
-  {% endif %}
+  {% endif %} #}
 </head>
 <body data-spy="scroll" data-target=".scrollspy">
 
@@ -39,6 +40,7 @@
 	<script src="components/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
   <script src="components/angular-bootstrap/ui-bootstrap.min.js"></script>
   <script src="components/angular-xeditable/dist/js/xeditable.js"></script>
+  <script src="components/angular-filter/dist/angular-filter.min.js"></script>
 
   <script src="js/dropdowns-enhancement.js"></script>
   <script src="js/main.js"></script>
