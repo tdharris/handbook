@@ -41,10 +41,7 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.dropdown-menu.inner {
-  max-height: 400px;
-  overflow-y: scroll;
-}
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;

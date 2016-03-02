@@ -10,6 +10,8 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$s
       $scope.portfolios = response.data.portfolios;
       $scope.products = response.data.products;
       console.log(response);
+      // $scope.products = $scope.sortObj($scope.products, 'portfolio');
+      console.log($scope.products);
     }, function errorCallback(response) {
       console.log(response);
   });
@@ -19,7 +21,6 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$s
     url: '/getContentData'
     }).then(function successCallback(response) {
       $scope.contentList = response.data;
-      console.log(response);
     }, function errorCallback(response) {
       console.log(response);
   });
@@ -51,6 +52,13 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$s
     $scope.selectedPortfolio = selectedProduct.portfolio;
     console.log(selectedProduct);
   };
+
+  /**
+   * Sorts an array of json objects by some common property, or sub-property.
+   * @param {array} objArray
+   * @param {array|string} prop Dot-delimited string or array of (sub)properties
+   */
+
 
 }]);
 

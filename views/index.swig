@@ -61,8 +61,8 @@
 	            </div> #}
 
 	            <div id="select-product" class="form-group">
-		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true">
-		            	<li nya-bs-option="product in products group by product.portfolio">
+		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true" size="20">
+		            	<li nya-bs-option="product in products | orderBy:'portfolio' group by product.portfolio">
 		            		<span class="dropdown-header">{{$group}}</span>
 		            		<a ng-click="updatePortfolio(product)">{{ product.name }}</a>
 		            	</li>

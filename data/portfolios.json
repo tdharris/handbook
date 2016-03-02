@@ -76,7 +76,7 @@
 	    "XCBC": {
 	        "name": "XCBC",
 	        "portfolio": "MF Cobol",
-	        "hbu": "",
+	        "hbu": "MF",
 	        "heritage": "MF"
 	    },
 	    "Visual COBOL": {
