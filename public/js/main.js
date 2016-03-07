@@ -71,9 +71,10 @@ myApp.filter('spaceless',function() {
   }
 });
 
-
+myApp.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
 
 // Configure 'xeditable' for in-place editing
 myApp.run(function(editableOptions) {
   editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
 });
+
