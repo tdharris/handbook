@@ -2,7 +2,7 @@
 
 {% block content %}
 <div ng-app="handbook">
-	<nav class="navbar navbar-fixed-top navbar-inverse">
+	<nav class=" navbar-fixed-top navbar-mf">
 	  <div class="container">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -11,11 +11,11 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="img/mf_logo_white.png"></a>
+	      <a class="navbar-brand" href="#"><img src="img/mf_logo.png"></a>
 	    </div>
 	    <div id="navbar" class="collapse navbar-collapse">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Demo</a></li>
+	        {# <li class="active"><a href="#">Demo</a></li> #}
 	      </ul>
 	    </div><!-- /.nav-collapse -->
 	  </div><!-- /.container -->
@@ -38,7 +38,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="" ng-click="clearDropdowns()">Support Handbook</a>
+	          <a class="navbar-brand" href="" ng-click="clearDropdowns()">Technical Support Handbook</a>
 	        </div>
 
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

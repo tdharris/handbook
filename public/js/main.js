@@ -71,6 +71,14 @@ myApp.filter('spaceless',function() {
   }
 });
 
+myApp.filter('nospace',function() {
+  return function(input) {
+    if (input) {
+        return input.replace(/\s+/g, '');
+    }
+  }
+});
+
 myApp.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
 
 // Configure 'xeditable' for in-place editing

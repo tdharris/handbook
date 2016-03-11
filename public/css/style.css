@@ -1,5 +1,5 @@
 body {
-  padding-top: 70px;
+  padding-top: 90px;
   padding-bottom: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   min-height: 600px;
@@ -11,7 +11,7 @@ body {
 }
 
 .welcomeTitle {
-  color: #00b8d4;
+  color: #01A9E7;
 }
 
 .editable-click:hover, a.editable-click:hover {
@@ -19,7 +19,8 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  /*color: #29CEFF;*/
+  color: #01A9E7;
 }
 .browsehappy {
   margin: 0.2em 0;
@@ -57,6 +58,15 @@ a {
   border-top: 1px solid #e5e5e5;
 }
 
+.navbar-mf {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  background-color: #0078EF;
+  height: 60px;
+  box-shadow: 0px 2px 4px -2px #6A7C87;
+}
+
 /*.container-narrow > hr {
   margin: 30px 0;
 }*/
@@ -65,6 +75,8 @@ a {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background-color: #3D515C;
+  color: #FFFFFF;
 }
 
 .jumbotron .btn {
@@ -172,7 +184,8 @@ footer {
 .nav .nav .active a,
 .nav .nav .active:hover a,
 .nav .nav .active:focus a {
-  border-left: 2px solid #00B7FF;
+  border-left: 2px solid #6A8C9E;
+  /*border-left: 2px solid #8457B6;*/
 }
 
 .nav .nav .active span,
@@ -180,6 +193,13 @@ footer {
 .nav .nav .active:focus span {
   display: none;
 }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  /*background-color: #3D515C;*/
+  background-color: #E8EAE9;
+  color: #3D515C;
+}
+
 /*
  * Off Canvas
  * --------------------------------------------------
