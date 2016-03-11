@@ -66,15 +66,7 @@ myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$s
 myApp.filter('spaceless',function() {
   return function(input) {
     if (input) {
-        return input.replace(/\s+/g, '-');
-    }
-  }
-});
-
-myApp.filter('nospace',function() {
-  return function(input) {
-    if (input) {
-        return input.replace(/\s+/g, '');
+        return input.replace(/[\s)()']+/g, '-'); // added some other characters (since this is used for generating href and scrollspy)
     }
   }
 });
