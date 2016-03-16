@@ -20,7 +20,7 @@
 		"Access Manager": {
 	        "name": "Access Manager",
 	        "portfolio": "Access",
-	        "hbu": "NQ-New",
+	        "hbu": "NV",
 	        "heritage": "NQ"
 	    },
 	    "xAccess": {
@@ -36,12 +36,12 @@
 	    "Secure Login": {
 	        "name": "Secure Login",
 	        "portfolio": "Access",
-	        "hbu": "NQ-New"
+	        "hbu": "NV"
 	    },
 	    "NAAF": {
 	        "name": "NAAF",
 	        "portfolio": "Access",
-	        "hbu": "NQ-New"
+	        "hbu": "NV"
 	    },
 	    "SSPR": {
 	        "name": "SSPR",
@@ -76,8 +76,7 @@
 	    "XCBC": {
 	        "name": "XCBC",
 	        "portfolio": "MF Cobol",
-	        "hbu": "MF",
-	        "heritage": "MF"
+	        "hbu": "MF"
 	    },
 	    "Visual COBOL": {
 	        "name": "Visual COBOL",
@@ -219,8 +218,13 @@
 	        "portfolio": "CORBA",
 	        "hbu": "MF"
 	    },
-	    "Caliber Atlas": {
-	        "name": "Caliber Atlas",
+	    "Caliber": {
+	        "name": "Caliber",
+	        "portfolio": "Borland",
+	        "hbu": "MF"
+	    },
+	    "Atlas": {
+	        "name": "Atlas",
 	        "portfolio": "Borland",
 	        "hbu": "MF"
 	    },
@@ -291,11 +295,6 @@
 	    },
 	    "SilkPerformer Cloudburst": {
 	        "name": "SilkPerformer Cloudburst",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    "SilkPerformer Diagnostics": {
-	        "name": "SilkPerformer Diagnostics",
 	        "portfolio": "Borland",
 	        "hbu": "MF"
 	    },
@@ -527,7 +526,7 @@
 	    "Change Guardian": {
 	        "name": "Change Guardian",
 	        "portfolio": "Security",
-	        "hbu": "NQ"
+	        "hbu": "NV"
 	    },
 	    "CMP": {
 	        "name": "CMP",
@@ -547,22 +546,22 @@
 	    "Forge": {
 	        "name": "Forge",
 	        "portfolio": "Workload & Virtualization",
-	        "hbu": "NQ"
+	        "hbu": "NV"
 	    },
 	    "Migrate": {
 	        "name": "Migrate",
 	        "portfolio": "Workload & Virtualization",
-	        "hbu": "NQ"
+	        "hbu": "NV"
 	    },
 	    "Protect": {
 	        "name": "Protect",
 	        "portfolio": "Workload & Virtualization",
-	        "hbu": "NQ"
+	        "hbu": "NV"
 	    },
 	    "Recon": {
 	        "name": "Recon",
 	        "portfolio": "Workload & Virtualization",
-	        "hbu": "NQ"
+	        "hbu": "NV"
 	    },
 	    "AppManager": {
 	        "name": "AppManager",
@@ -587,7 +586,7 @@
 	    "Operations Center": {
 	        "name": "Operations Center",
 	        "portfolio": "Data Center",
-	        "hbu": "NQ"
+	        "hbu": "NV"
 	    },
 	     "IDM Advanced Edition": {
 	        "name": "IDM Advanced Edition",

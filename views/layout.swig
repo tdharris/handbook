@@ -32,7 +32,6 @@
 	<script src="components/bootstrap/js/modal.js"></script>
 	<script src="components/bootstrap/js/transition.js"></script>
 	<script src="components/bootstrap/js/button.js"></script>
-	<script src="components/bootstrap/js/popover.js"></script>
 	<script src="components/bootstrap/js/carousel.js"></script>
 	<script src="components/bootstrap/js/scrollspy.js"></script>
 	<script src="components/bootstrap/js/collapse.js"></script>
