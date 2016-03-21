@@ -44,22 +44,6 @@
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	          <form class="navbar-form navbar-left">
 
-	            {# <div id="select-portfolio" class="form-group">
-		            <ul class="nya-bs-select" ng-model="selectedPortfolio" title="Select Portfolio" data-live-search="true">
-		            	<li nya-bs-option="portfolio in portfolios">
-		            		<a>{{ portfolio }}</a>
-		            	</li>
-		            </ul>
-	            </div>
-
-	            <div id="select-product" class="form-group">
-		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true">
-		            	<li nya-bs-option="product in products | searchField: 'portfolio' | filter: selectedPortfolio">
-		            		<a ng-click="updatePortfolio(product)">{{ product.name }}</a>
-		            	</li>
-		            </ul>
-	            </div> #}
-
 	            <div id="select-product" class="form-group">
 		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true" size="20">
 		            	<li nya-bs-option="product in products | orderBy:'portfolio' group by product.portfolio">
@@ -104,15 +88,15 @@
 		    {# Content #}
 			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
-			  <div class="sectionContent" ng-bind-html="sectionValue.content || ' ... '" editable-textarea="sectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()"></div>
+			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
 			  <section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
 			    <div ng-switch-when="true">
 			    	<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
-			    	<div class="sectionContent" editable-textarea="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content || ' ... '"></div>
+			    	<div class="sectionContent" ng-bind-html="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content"></div>
 			    </div>
 			    <div ng-switch-default>
 			    	<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
-			    	<div class="sectionContent" editable-textarea="subsectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="subsectionValue.content || ' ... '"></div>
+			    	<div class="sectionContent" ng-bind-html="subsectionValue.content"></div>
 			    </div>
 			  </section>
 			  <hr>
