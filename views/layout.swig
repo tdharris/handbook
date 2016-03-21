@@ -43,7 +43,6 @@
 
   <script src="js/dropdowns-enhancement.js"></script>
   <script src="js/main.js"></script>
-	<script src="js/popovers.js"></script>
 
 </body>
 </html>
