@@ -1,628 +1,698 @@
 {
-    "portfolios": [ 
-	    "Identity and Access Management",
-	    "COBOL Development and Mainframe",
-	    "MF Enterprise",
-	    "Niche",
-	    "CORBA",
-	    "Borland",
-	    "Endpoint Management",
-	    "Host Connectivity",
-	    "Nov/Attm Other",
-	    "Collaboration",
-	    "File and Network Services",
-	    "Security Management",
-	    "Workload and Disaster Recovery",
-	    "Data Center Management",
-	    "Identity and Access Management",
-	    "Endpoint Management"
-	],
-	"products": [
-		{
-	        "name": "Access Manager",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NV",
-	        "heritage": "NQ"
-	    },
-	    {
-	        "name": "xAccess",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "Privileged Account Manager",
-	        "portfolio": "Security Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "Secure Login",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "NAAF",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "SSPR",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "IdentityAccess",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "Account Mgmt Service",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "MF COBOL",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "ACUCOBOL-GT",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "RM/COBOL",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "XCBC",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Visual COBOL",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Enterprise Server",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Enterprise Developer",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Enterprise Test Server",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Data Express",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Enterprise Analyzer",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Enterprise View",
-	        "portfolio": "COBOL Development and Mainframe",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Revolve",
-	        "portfolio": "MF Enterprise",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Together",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "DevPartner",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "QADirector",
-	        "portfolio": "Niche",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "QALoad",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "TestPartner",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Other/Old Silk",
-	        "portfolio": "Niche",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Team Define",
-	        "portfolio": "Niche",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Optimal Trace",
-	        "portfolio": "Niche",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "VisiBroker",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "AppServer",
-	        "portfolio": "CORBA",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "OpenFusion TAO",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "OpenFusion JacORB",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "CORBA-Services",
-	        "portfolio": "CORBA",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Security Management",
-	        "portfolio": "CORBA",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "OpenFusion RTOrb Java Edition",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "OpenFusion RTOrb Ada Edition",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Artix",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Orbacus",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Orbix",
-	        "portfolio": "File and Network Services",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Caliber",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Atlas",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "StarTeam",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "AccuRev",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "GitCentric",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "AccuReplica",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "AccuWork",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "AccuSync",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "AccuBridge",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "ClearCase",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Adapater",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Migration",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "SilkCentral Test Manager",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Silk Mobile",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Silk Performer",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "SilkPerformer Cloudburst",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Silk Test",
-	        "portfolio": "Testing and Software Delivery",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "TM ART",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "SilkCentral Connect",
-	        "portfolio": "Borland",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "ZENworks Configuration Management",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "ZENworks Patch Management",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "ZENworks Asset Management",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "ZENworks Application Virtulization",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "ZENworks Endpoint Security Management",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "ZENworks Full Disk Encryption",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Micro Focus Mobile Management",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Micro Focus Service Desk",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "ALA/SLA Bundle-ZENworks",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Verastream",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "Databridge",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "FileXpress",
-	        "portfolio": "Host Connectivity",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "Reflection",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "Management and Security Services MSS",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "Reflection ZFE",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "Reflection for Secure IT",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "Extra!",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "InfoConnect",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "Rumba+",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "EnterpriseLink",
-	        "portfolio": "Host Connectivity",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "OnWeb",
-	        "portfolio": "Host Connectivity",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "ViewNow",
-	        "portfolio": "Terminal Emulation",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Web-to-Host",
-	        "portfolio": "Host Connectivity",
-	        "hbu": "MF"
-	    },
-	    {
-	        "name": "Border Manager",
-	        "portfolio": "Nov/Attm Other",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Legacy/Royalties",
-	        "portfolio": "Nov/Attm Other",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Nest/Unix Related",
-	        "portfolio": "Nov/Attm Other",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Luminet",
-	        "portfolio": "Nov/Attm Other",
-	        "hbu": "AQ"
-	    },
-	    {
-	        "name": "GroupWise",
-	        "portfolio": "Collaboration",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Vibe",
-	        "portfolio": "Collaboration",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Open Enterprise Server (OES)",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Filr",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Micro Focus iPrint",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Cluster Services/BCC",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "NetWare",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "NOWS/NOWS SBE",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "File Management Suite",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "File Reporter",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Storage Manager",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Dynamic File Services",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "ALA/SLA Bundle",
-	        "portfolio": "File and Network Services",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Config Manager",
-	        "portfolio": "Security Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "Sentinel",
-	        "portfolio": "Security Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "Change Guardian",
-	        "portfolio": "Security Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "CMP",
-	        "portfolio": "Security Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "iSeries",
-	        "portfolio": "Security Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "Cloud Manager",
-	        "portfolio": "Workload and Disaster Recovery",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "PlateSpin Forge",
-	        "portfolio": "Workload and Disaster Recovery",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "PlateSpin Migrate",
-	        "portfolio": "Workload and Disaster Recovery",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "PlateSpin Protect",
-	        "portfolio": "Workload and Disaster Recovery",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "PlateSpin Recon",
-	        "portfolio": "Workload and Disaster Recovery",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "AppManager",
-	        "portfolio": "Data Center Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "Unix",
-	        "portfolio": "Data Center Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "VoIP",
-	        "portfolio": "Data Center Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "Aegis",
-	        "portfolio": "Data Center Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "Operations Center",
-	        "portfolio": "Data Center Management",
-	        "hbu": "NV"
-	    },
-	    {
-	        "name": "IDM Advanced Edition",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "IDM Standard Edition",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "Other IDM",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "ALA/SLA Bundle - Identity",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "DRA",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ"
-	    },
-	    {
-	        "name": "eDirectory",
-	        "portfolio": "Endpoint Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "Access Governance",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    },
-	    {
-	        "name": "Access Review",
-	        "portfolio": "Identity and Access Management",
-	        "hbu": "NQ-New"
-	    }
-	]
+    "products": [{
+        "name": "AcuBench",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "AcuServer",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "AcuXDBC",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Cluster Services for Open Enterprise Server",
+        "portfolio": "File and Network Services",
+        "hbu": "NV",
+        "heritage": ""
+    }, {
+        "name": "Directory and Resource Administrator",
+        "portfolio": "Security Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Access Governance Suite",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ",
+        "heritage": ""
+    },{
+        "name": "Access Manager",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Access Review",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "AccuRev",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "",
+        "heritage": ""
+    }, {
+        "name": "Acu4GL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "AcuConnect",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "AcuSQL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Business Rule Manager",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Client for Windows",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV",
+        "heritage": ""
+    }, {
+        "name": "COBOL Server",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Exchange Administrator",
+        "portfolio": "Security Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Group Policy Administrator",
+        "portfolio": "Security Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Host Access Management and Security Server",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "InstantSQL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Mainframe Express Enterprise Edition",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Micro Focus Application Virtualization",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV",
+        "heritage": ""
+    }, {
+        "name": "Micro Focus Connect",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Micro Focus iFolder",
+        "portfolio": "File and Network Services",
+        "hbu": "NV",
+        "heritage": ""
+    }, {
+        "name": "Net Express",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Net Express / Server Express",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "NFS Gateway for NetWare 6.5",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV",
+        "heritage": ""
+    }, {
+        "name": "OpenFusion CORBA Services",
+        "portfolio": "File and Network Services",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "OpenFusion Security",
+        "portfolio": "File and Network Services",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Reflection for the Multi-Host Enterprise 14.1",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection for the Web Airlines Edition",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection for the Web Enterprise Edition",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection for the Web Unisys Edition",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection for UNIX and OpenVMS 14.1",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection for UNIX, Android Edition",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection for UNIX, iOS Edition",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection Suite for X 14.1",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Reflection X 14.1",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Relativity",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "RM/InfoExpress",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Secure Configuration Manager",
+        "portfolio": "Security Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Security Solutions for iSeries",
+        "portfolio": "Security Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Self Service Password Reset",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Server Enterprise Edition",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Server Express",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Server for COBOL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Silk 4J",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Silk 4Net",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Silk TestPartner",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Silk Webmeter",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Studio Enterprise Edition",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Unisys Open Message Switching Engine",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ",
+        "heritage": ""
+    }, {
+        "name": "Validator",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Vivinet Assessor",
+        "portfolio": "Data Center Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "Vivinet Diagnostics",
+        "portfolio": "Data Center Management",
+        "hbu": "NQ",
+        "heritage": ""
+    }, {
+        "name": "WOW Extensions",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Xcentisity Business Information Server for RM/COBOL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "Xcentrisity Business Information Server for extend",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF",
+        "heritage": ""
+    }, {
+        "name": "ZENworks Virtual Appliance",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV",
+        "heritage": ""
+    }, {
+        "name": "Access Manager",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NV",
+        "heritage": "NQ"
+    }, {
+        "name": "xAccess",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "Privileged Account Manager",
+        "portfolio": "Security Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "Secure Login",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NV"
+    }, {
+        "name": "NAAF",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NV"
+    }, {
+        "name": "SSPR",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "IdentityAccess",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "Account Mgmt Service",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "MF COBOL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "ACUCOBOL-GT",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "RM/COBOL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "XCBC",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "Visual COBOL",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "Enterprise Server",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "Enterprise Developer",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "Enterprise Test Server",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "Data Express",
+        "portfolio": "Terminal Emulation",
+        "hbu": "MF"
+    }, {
+        "name": "Enterprise Analyzer",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "Enterprise View",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "MF"
+    }, {
+        "name": "Together",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "DevPartner",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "QALoad",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "TestPartner",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "VisiBroker",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "OpenFusion TAO",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "OpenFusion JacORB",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "CORBA-Services",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "OpenFusion RTOrb Java Edition",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "OpenFusion RTOrb Ada Edition",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "Artix",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "Orbacus",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "Orbix",
+        "portfolio": "File and Network Services",
+        "hbu": "MF"
+    }, {
+        "name": "Caliber",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "Atlas",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "StarTeam",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "AccuRev",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "GitCentric",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "AccuSync",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "SilkCentral Test Manager",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "Silk Mobile",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "Silk Performer",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "SilkPerformer Cloudburst",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "Silk Test",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "SilkCentral Connect",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "MF"
+    }, {
+        "name": "ZENworks Configuration Management",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "ZENworks Patch Management",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "ZENworks Asset Management",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "ZENworks Application Virtulization",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "ZENworks Endpoint Security Management",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "ZENworks Full Disk Encryption",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "Micro Focus Mobile Management",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "Micro Focus Service Desk",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "ALA/SLA Bundle-ZENworks",
+        "portfolio": "Endpoint Management",
+        "hbu": "NV"
+    }, {
+        "name": "Verastream",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "Databridge",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "FileXpress",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "Reflection",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "Management and Security Services MSS",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "Reflection ZFE",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "Reflection for Secure IT",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "Extra!",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "InfoConnect",
+        "portfolio": "Terminal Emulation",
+        "hbu": "AQ"
+    }, {
+        "name": "Rumba+",
+        "portfolio": "Terminal Emulation",
+        "hbu": "MF"
+    }, {
+        "name": "ViewNow",
+        "portfolio": "Terminal Emulation",
+        "hbu": "MF"
+    }, {
+        "name": "Border Manager",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "GroupWise",
+        "portfolio": "Collaboration",
+        "hbu": "NV"
+    }, {
+        "name": "Vibe",
+        "portfolio": "Collaboration",
+        "hbu": "NV"
+    }, {
+        "name": "Open Enterprise Server (OES)",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "Filr",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "Micro Focus iPrint",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "Cluster Services/BCC",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "NetWare",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "NOWS/NOWS SBE",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "File Management Suite",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "File Reporter",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "Storage Manager",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "Dynamic File Services",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "ALA/SLA Bundle",
+        "portfolio": "File and Network Services",
+        "hbu": "NV"
+    }, {
+        "name": "Config Manager",
+        "portfolio": "Security Management",
+        "hbu": "NQ"
+    }, {
+        "name": "Sentinel",
+        "portfolio": "Security Management",
+        "hbu": "NV"
+    }, {
+        "name": "Change Guardian",
+        "portfolio": "Security Management",
+        "hbu": "NV"
+    }, {
+        "name": "CMP",
+        "portfolio": "Security Management",
+        "hbu": "NQ"
+    }, {
+        "name": "iSeries",
+        "portfolio": "Security Management",
+        "hbu": "NQ"
+    }, {
+        "name": "Cloud Manager",
+        "portfolio": "Workload and Disaster Recovery",
+        "hbu": "NV"
+    }, {
+        "name": "PlateSpin Forge",
+        "portfolio": "Workload and Disaster Recovery",
+        "hbu": "NV"
+    }, {
+        "name": "PlateSpin Migrate",
+        "portfolio": "Workload and Disaster Recovery",
+        "hbu": "NV"
+    }, {
+        "name": "PlateSpin Protect",
+        "portfolio": "Workload and Disaster Recovery",
+        "hbu": "NV"
+    }, {
+        "name": "PlateSpin Recon",
+        "portfolio": "Workload and Disaster Recovery",
+        "hbu": "NV"
+    }, {
+        "name": "AppManager",
+        "portfolio": "Data Center Management",
+        "hbu": "NQ"
+    }, {
+        "name": "Unix",
+        "portfolio": "Data Center Management",
+        "hbu": "NQ"
+    }, {
+        "name": "VoIP",
+        "portfolio": "Data Center Management",
+        "hbu": "NQ"
+    }, {
+        "name": "Aegis",
+        "portfolio": "Data Center Management",
+        "hbu": "NQ"
+    }, {
+        "name": "Operations Center",
+        "portfolio": "Data Center Management",
+        "hbu": "NV"
+    }, {
+        "name": "IDM Advanced Edition",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "IDM Standard Edition",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "Other IDM",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "ALA/SLA Bundle - Identity",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "DRA",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ"
+    }, {
+        "name": "eDirectory",
+        "portfolio": "Endpoint Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "Access Governance",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }, {
+        "name": "Access Review",
+        "portfolio": "Identity and Access Management",
+        "hbu": "NQ-New"
+    }]
 }
