@@ -31,33 +31,33 @@ router.get('/getContentData', function(req, res) {
 });
 
 // Removing editable textareas feature
-// router.post('/editContentData', function(req, res) {
-// 	jsonUtil.loadJson(contentData, function (err, json) {
-// 	    // TODO: make sure you handle errors
-// 	    // if err is not null, you can either consider it an error, or
-// 	    // you could simply say json = [] and start a new file
-// 	    if(err) {
-// 	    	console.log(err);
-// 	    	res.send(500, 'Problem saving data: ' + err);
-// 	    }
+router.post('/editContentData', function(req, res) {
+	jsonUtil.loadJson(contentData, function (err, json) {
+	    // TODO: make sure you handle errors
+	    // if err is not null, you can either consider it an error, or
+	    // you could simply say json = [] and start a new file
+	    if(err) {
+	    	console.log(err);
+	    	res.send(500, 'Problem saving data: ' + err);
+	    }
 
-// 	    else {
-// 	    	// should also do validation checks like if(json instanceof Array) and
-// 		    // verify that req.body exists and is properly formatted, etc
+	    else {
+	    	// should also do validation checks like if(json instanceof Array) and
+		    // verify that req.body exists and is properly formatted, etc
 
-// 		    json = req.body;
+		    json = req.body;
 
-// 		    // re-save the file
-// 		    jsonUtil.writeJson(contentData, json, function (err) {
-// 				if (err) {
-// 					console.log(err);
-// 					res.send(500, 'Problem saving data: ' + err);
-// 				}
-// 				else res.sendStatus(200);
-// 		    });
-// 		}
-// 	});
+		    // re-save the file
+		    jsonUtil.writeJson(contentData, json, function (err) {
+				if (err) {
+					console.log(err);
+					res.send(500, 'Problem saving data: ' + err);
+				}
+				else res.sendStatus(200);
+		    });
+		}
+	});
 
-// });
+});
 
 module.exports = router;

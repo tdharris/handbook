@@ -86,7 +86,25 @@
 		    </div>
 
 		    {# Content #}
+		    {# With xeditable feature #}
 			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+				<h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
+				<div class="sectionContent" ng-bind-html="sectionValue.content || ' ... '" editable-textarea="sectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()"></div>
+				<section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
+					<div ng-switch-when="true">
+						<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
+						<div class="sectionContent" editable-textarea="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content || ' ... '"></div>
+					</div>
+					<div ng-switch-default>
+						<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
+						<div class="sectionContent" editable-textarea="subsectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="subsectionValue.content || ' ... '"></div>
+					</div>
+				</section>
+				<hr>
+			</section>
+
+		    {# Without xeditable feature #}
+			{# <section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
 			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
 			  <section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
@@ -100,7 +118,7 @@
 			    </div>
 			  </section>
 			  <hr>
-			</section>
+			</section> #}
 
 		    </div>
 	    </div><!--/.col-xs-12.col-sm-9-->

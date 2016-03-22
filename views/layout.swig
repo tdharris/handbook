@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="css/dropdowns-enhancement.css" />
   <link rel="stylesheet" href="components/nya-bootstrap-select/dist/css/nya-bs-select.css" />
-  {# <link rel="stylesheet" href="components/angular-xeditable/dist/css/xeditable.css" /> #}
+  <link rel="stylesheet" href="components/angular-xeditable/dist/css/xeditable.css" />
   <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 
@@ -38,7 +38,7 @@
 	<script src="components/bootstrap/js/tab.js"></script>
 	<script src="components/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
   <script src="components/angular-bootstrap/ui-bootstrap.min.js"></script>
-  {# <script src="components/angular-xeditable/dist/js/xeditable.js"></script> #}
+  <script src="components/angular-xeditable/dist/js/xeditable.js"></script>
   <script src="components/angular-filter/dist/angular-filter.min.js"></script>
 
   <script src="js/dropdowns-enhancement.js"></script>

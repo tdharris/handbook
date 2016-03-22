@@ -1,4 +1,4 @@
-var myApp = angular.module('handbook', ['nya.bootstrap.select', 'ngSanitize', 'angular.filter']);
+var myApp = angular.module('handbook', ['nya.bootstrap.select', 'ngSanitize', 'xeditable', 'angular.filter']);
 
 myApp.controller('HandbookCtrl', ['$scope', '$sce', '$http', function ($scope,$sce,$http) {
 
@@ -65,3 +65,8 @@ myApp.filter('spaceless',function() {
 });
 
 myApp.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
+
+// Configure 'xeditable' for in-place editing
+myApp.run(function(editableOptions) {
+  editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+});
