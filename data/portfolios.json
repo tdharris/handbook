@@ -27,22 +27,22 @@
     }, {
         "name": "Access Governance Suite",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ",
+        "hbu": "NV",
         "heritage": ""
     },{
         "name": "Access Manager",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ",
+        "hbu": "NV",
         "heritage": ""
     }, {
         "name": "Access Review",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ",
+        "hbu": "NV",
         "heritage": ""
     }, {
         "name": "AccuRev",
         "portfolio": "Testing and Software Delivery",
-        "hbu": "",
+        "hbu": "MF",
         "heritage": ""
     }, {
         "name": "Acu4GL",
@@ -207,7 +207,7 @@
     }, {
         "name": "Self Service Password Reset",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ",
+        "hbu": "NV",
         "heritage": ""
     }, {
         "name": "Server Enterprise Edition",
@@ -257,7 +257,7 @@
     }, {
         "name": "Validator",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ",
+        "hbu": "NV",
         "heritage": ""
     }, {
         "name": "Vivinet Assessor",
@@ -297,11 +297,11 @@
     }, {
         "name": "xAccess",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "Privileged Account Manager",
         "portfolio": "Security Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "Secure Login",
         "portfolio": "Identity and Access Management",
@@ -313,15 +313,15 @@
     }, {
         "name": "SSPR",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "IdentityAccess",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "Account Mgmt Service",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "MF COBOL",
         "portfolio": "COBOL Development and Mainframe",
@@ -665,19 +665,19 @@
     }, {
         "name": "IDM Advanced Edition",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "IDM Standard Edition",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "Other IDM",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "ALA/SLA Bundle - Identity",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "DRA",
         "portfolio": "Identity and Access Management",
@@ -685,14 +685,14 @@
     }, {
         "name": "eDirectory",
         "portfolio": "Endpoint Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "Access Governance",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }, {
         "name": "Access Review",
         "portfolio": "Identity and Access Management",
-        "hbu": "NQ-New"
+        "hbu": "NV"
     }]
 }
