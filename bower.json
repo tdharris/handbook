@@ -12,6 +12,8 @@
     "nya-bootstrap-select": "~2.1.2",
     "angular-sanitize": "~1.4.8",
     "angular-xeditable": "~0.1.9",
-    "angular-filter": "~0.5.8"
+    "angular-filter": "~0.5.8",
+    "angular-socket-io": "~0.7.0",
+    "socket.io-client": "~1.4.5"
   }
 }

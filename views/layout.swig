@@ -37,8 +37,11 @@
 	<script src="components/bootstrap/js/collapse.js"></script>
 	<script src="components/bootstrap/js/tab.js"></script>
 	<script src="components/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
+  <script src="components/socket.io-client/socket.io.js"></script>
+  <script src="components/angular-socket-io/socket.min.js"></script>
   <script src="components/angular-bootstrap/ui-bootstrap.min.js"></script>
   <script src="components/angular-xeditable/dist/js/xeditable.js"></script>
+
   <script src="components/angular-filter/dist/angular-filter.min.js"></script>
 
   <script src="js/dropdowns-enhancement.js"></script>

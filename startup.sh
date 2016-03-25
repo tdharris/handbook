@@ -1,2 +1,2 @@
 #!/bin/sh
-nohup node bin/www &
+nohup node app.js &

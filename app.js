@@ -7,10 +7,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
-
-var routes = require('./routes/index');
-
 var app = express();
+var http = require('http').Server(app);
+app.io = require('socket.io')(http);
+var routes = require('./routes/index')(app);
 
 var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
@@ -27,7 +27,7 @@ swig.setDefaults({
 });
 
 // app.use(favicon(__dirname + '/public/img/favicon.ico'));
-app.use(logger('dev'));
+app.use(logger('short'));
 app.use(bodyParser.json({limit:'50mb'}));
 app.use(bodyParser.urlencoded({
   extended: true,
@@ -72,5 +72,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-
-module.exports = app;
+http.listen(3000, function(){
+  console.log('listening on *:3000');
+});
