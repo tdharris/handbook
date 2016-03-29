@@ -1,4 +1,4 @@
-# handbook
+# Support Handbook
 Support Handbook. This site attempts to merge various support handbooks throughout the organization into a single-page webapp for customers to use as a portal to access handbooks by portfolios and products. This repository requires node.js and npm. 
 
 <b>To install</b>:
