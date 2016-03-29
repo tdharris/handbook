@@ -7,7 +7,7 @@ Support Handbook. This site attempts to merge various support handbooks througho
 2. Install dependencies:
   * Install node modules: `npm install`
   * Install bower components: `bower install`
-3. Launch: `node bin/www` or dev with live-reload: `gulp`
+3. Launch: `node app.js` or dev with live-reload: `gulp`
 4. Connect to browser `http://localhost:3000`
 
 <b>How to enable live xeditable feature</b>:
