@@ -34,12 +34,7 @@
         "portfolio": "Identity and Access Management",
         "hbu": "NV",
         "heritage": ""
-    }, {
-        "name": "Access Review",
-        "portfolio": "Identity and Access Management",
-        "hbu": "NV",
-        "heritage": ""
-    }, {
+    },{
         "name": "AccuRev",
         "portfolio": "Testing and Software Delivery",
         "hbu": "MF",
@@ -289,12 +284,7 @@
         "portfolio": "Endpoint Management",
         "hbu": "NV",
         "heritage": ""
-    }, {
-        "name": "Access Manager",
-        "portfolio": "Identity and Access Management",
-        "hbu": "NV",
-        "heritage": ""
-    }, {
+    },{
         "name": "xAccess",
         "portfolio": "Identity and Access Management",
         "hbu": "NV"
