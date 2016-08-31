@@ -33,45 +33,45 @@ module.exports = function(app) {
 	});
 
 	// xeditable feature & live edits through establishing sockets
-	// app.io.on('connection', function(socket){
-	// 	console.log('a user connected:', socket.conn.remoteAddress);
-	// 	jsonUtil.loadJson(contentData, function(err, results) {
-	// 		if(err) console.log(err);
-	// 		app.io.emit('newContent', results);
-	// 	});
+	app.io.on('connection', function(socket){
+		console.log('a user connected:', socket.conn.remoteAddress);
+		jsonUtil.loadJson(contentData, function(err, results) {
+			if(err) console.log(err);
+			app.io.emit('newContent', results);
+		});
 		
-	// });
-	// router.post('/editContentData', function(req, res) {
-	// 	jsonUtil.loadJson(contentData, function (err, json) {
-	// 	    // TODO: make sure you handle errors
-	// 	    // if err is not null, you can either consider it an error, or
-	// 	    // you could simply say json = [] and start a new file
-	// 	    if(err) {
-	// 	    	console.log(err);
-	// 	    	res.send(500, 'Problem saving data: ' + err);
-	// 	    }
+	});
+	router.post('/editContentData', function(req, res) {
+		jsonUtil.loadJson(contentData, function (err, json) {
+		    // TODO: make sure you handle errors
+		    // if err is not null, you can either consider it an error, or
+		    // you could simply say json = [] and start a new file
+		    if(err) {
+		    	console.log(err);
+		    	res.send(500, 'Problem saving data: ' + err);
+		    }
 
-	// 	    else {
-	// 	    	// should also do validation checks like if(json instanceof Array) and
-	// 		    // verify that req.body exists and is properly formatted, etc
+		    else {
+		    	// should also do validation checks like if(json instanceof Array) and
+			    // verify that req.body exists and is properly formatted, etc
 
-	// 		    json = req.body;
+			    json = req.body;
 
-	// 		    // re-save the file
-	// 		    jsonUtil.writeJson(contentData, json, function (err) {
-	// 				if (err) {
-	// 					console.log(err);
-	// 					res.send(500, 'Problem saving data: ' + err);
-	// 				}
-	// 				else { 
-	// 					res.sendStatus(200);
-	// 					app.io.emit('newContent', json);
-	// 				}
-	// 		    });
-	// 		}
-	// 	});
+			    // re-save the file
+			    jsonUtil.writeJson(contentData, json, function (err) {
+					if (err) {
+						console.log(err);
+						res.send(500, 'Problem saving data: ' + err);
+					}
+					else { 
+						res.sendStatus(200);
+						app.io.emit('newContent', json);
+					}
+			    });
+			}
+		});
 
-	// });
+	});
 
 	return router;
 
