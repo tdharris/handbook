@@ -86,7 +86,7 @@
 		    </div>
 
 		    {# Content #}
-			{# <section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
 			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
 			  <section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
@@ -100,10 +100,10 @@
 			    </div>
 			  </section>
 			  <hr>
-			</section> #}
+			</section>
 
 			{# Same Content section as above, but with xeditable feature (permitting users to update content sections live within the site) #}
-			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+			{# <section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 				<h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
 				<div class="sectionContent" ng-bind-html="sectionValue.content || ' ... '" editable-textarea="sectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()"></div>
 				<section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
@@ -117,7 +117,7 @@
 					</div>
 				</section>
 				<hr>
-			</section>
+			</section> #}
 
 		    </div>
 	    </div><!--/.col-xs-12.col-sm-9-->
