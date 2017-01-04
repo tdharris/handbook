@@ -58,7 +58,7 @@ app.controller('HandbookCtrl', ['$scope', '$sce', '$http', 'socket', function ($
   // Get data for views from server
   $http({
     method: 'GET',
-    url: '/getPortfolioData'
+    url: 'getPortfolioData'
     }).then(function successCallback(response) {
       $scope.portfolios = response.data.portfolios;
       $scope.products = response.data.products;
@@ -68,7 +68,7 @@ app.controller('HandbookCtrl', ['$scope', '$sce', '$http', 'socket', function ($
 
   $http({
     method: 'GET',
-    url: '/getContentData'
+    url: 'getContentData'
     }).then(function successCallback(response) {
       $scope.contentList = response.data;
     }, function errorCallback(response) {
@@ -85,7 +85,7 @@ app.controller('HandbookCtrl', ['$scope', '$sce', '$http', 'socket', function ($
 
   // Update data (send to server for saving)
   $scope.updateContentData = function(data) {
-    return $http.post('/editContentData', $scope.contentList);
+    return $http.post('editContentData', $scope.contentList);
   };
 
   // Other/Utility
