@@ -3,6 +3,8 @@ public/components
 .sass-cache
 nohup.out
 
+DIRECTIONS-PUBLISH-CHANGES.txt
+
 # ignore live-edit feature
 routes/index.js
 views/index.swig
