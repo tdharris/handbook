@@ -15,5 +15,5 @@ module.exports.loadJson = function (file, callback) {
 };
 
 module.exports.writeJson = function (file, json, callback) {
-  fs.writeFile(file, JSON.stringify(json), callback);
+  fs.writeFile(file, JSON.stringify(json, null, 4), callback);
 };
