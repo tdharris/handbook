@@ -5,6 +5,10 @@ body {
   min-height: 600px;
 }
 
+h5 {
+  font-weight: bold;
+}
+
 .editable-click {
   color: inherit;
   border-bottom: 0;
@@ -46,6 +50,9 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
+p {
+  padding: 0px 0px 6px 0px;
+}
 
 /* Make the masthead heading the same height as the navigation */
 .header h3 {

@@ -115,7 +115,7 @@
 				<div class='addSection'>
 					<button type="button" class="btn btn-outline-success" ng-click="addSection(sectionKey, selectedProduct.hbu || selectedHandbook)">
 						<i class="fa fa-plus" aria-hidden="true"></i>
-						<p>Add Section</p>
+						<span>Add Section</span>
 					</button>
 				</div>
 				<h2>
@@ -127,7 +127,7 @@
 				<div class='addSection addMinorSection'>
 					<button type="button" class="btn btn-outline-secondary" ng-click="addSubsection(null, selectedProduct.hbu || selectedHandbook, sectionKey)">
 						<i class="fa fa-plus" aria-hidden="true"></i>
-						<p>Add Subsection</p>
+						<span>Add Subsection</span>
 					</button>
 				</div>
 				<section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu || selectedHandbook][sectionKey].subsections">
@@ -149,7 +149,7 @@
 					<div class='addSection addMinorSection'>
 						<button type="button" class="btn btn-outline-secondary" ng-click="addSubsection(subsectionKey, selectedProduct.hbu || selectedHandbook, sectionKey)">
 							<i class="fa fa-plus" aria-hidden="true"></i>
-							<p>Add Subsection</p>
+							<span>Add Subsection</span>
 						</button>
 					</div>
 				</section>
@@ -159,7 +159,7 @@
 			<div ng-if="selectedProduct || selectedHandbook" class='addSection'>
 				<button type="button" class="btn btn-outline-success" ng-click="addEndSection(selectedProduct.hbu || selectedHandbook)">
 					<i class="fa fa-plus" aria-hidden="true"></i>
-					<p>Add Section</p>
+					<span>Add Section</span>
 				</button>
 			</div>
 			
