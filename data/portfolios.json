@@ -684,5 +684,105 @@
         "name": "Access Review",
         "portfolio": "Identity and Access Management",
         "hbu": "NV"
+    }, {
+        "name": "GWAVA",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Migration Toolkit (MTK)",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Redline",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Reload for GroupWise",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Reload for Retain",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Blueprint for Reload",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Retain",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Reveal",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "Vertigo",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, {
+        "name": "WASP",
+        "portfolio": "Collaboration",
+        "hbu": "GWAVA"
+    }, { 
+        "name": "ChangeMan SSM",
+        "portfolio": "",
+        "hbu": "Serena"
+    },{ 
+        "name": "ChangeMan ZMF",
+        "portfolio": "",
+        "hbu": "Serena"
+    },{ 
+        "name": "ChangeMan ZMF Client Pack",
+        "portfolio": "COBOL Development and Mainframe",
+        "hbu": "Serena"
+    },{ 
+        "name": "Comparex",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "Deployment Automation",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "Dimensions CM",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "Dimensions RM",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "PVCS Professional Suite",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "Release Control",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "Service Request Center",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "Solutions Business Manager",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "Service Support Manager",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "StarTool DA",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "StarTool FDM",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
+    },{ 
+        "name": "StarTool IOO",
+        "portfolio": "Testing and Software Delivery",
+        "hbu": "Serena"
     }]
 }
