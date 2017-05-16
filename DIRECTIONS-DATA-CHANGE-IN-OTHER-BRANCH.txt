@@ -22,3 +22,7 @@ Date:   Fri Sep 9 12:46:29 2016 -0600
 
     3 phone number changes: All numbers were on the Attachmate support handbook in the “Open a Support Incident” subsection. Number changes were for New Zealand, Japan, and Hong Kong.
 
+
+# Courtesy email / assign bug to:
+# Jon Henage (has left the company)
+John.Walter@microfocus.com

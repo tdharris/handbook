@@ -684,46 +684,6 @@
         "name": "Access Review",
         "portfolio": "Identity and Access Management",
         "hbu": "NV"
-    }, {
-        "name": "GWAVA",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Migration Toolkit (MTK)",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Redline",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Reload for GroupWise",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Reload for Retain",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Blueprint for Reload",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Retain",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Reveal",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "Vertigo",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
-    }, {
-        "name": "WASP",
-        "portfolio": "Collaboration",
-        "hbu": "GWAVA"
     }, { 
         "name": "ChangeMan SSM",
         "portfolio": "",
