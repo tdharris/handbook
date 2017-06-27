@@ -5,6 +5,10 @@ body {
   min-height: 600px;
 }
 
+h5 {
+  font-weight: bold;
+}
+
 .editable-click {
   color: inherit;
   border-bottom: 0;
@@ -18,6 +22,10 @@ body {
   color: inherit;
 }
 
+.clickable {
+  cursor: pointer;
+  cursor: hand;
+}
 a {
   /*color: #29CEFF;*/
   color: #01A9E7;
@@ -42,6 +50,9 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
+p {
+  padding: 0px 0px 6px 0px;
+}
 
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -70,6 +81,39 @@ a {
 /*.container-narrow > hr {
   margin: 30px 0;
 }*/
+
+.addSection {
+  color: #27ae60;
+}
+.addSection > i,p {
+  display: inline-block;
+  margin: 0;
+}
+.addMinorSection {
+  margin-left: 0 0 20px 20px;
+}
+.btn-outline-success {
+    color: #5cb85c;
+    background-image: none;
+    background-color: transparent;
+    border-color: #5cb85c;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+.btn-outline-secondary {
+    color: #ccc;
+    background-image: none;
+    background-color: transparent;
+    border-color: #ccc;
+}
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #ccc;
+}
 
 /* Main marketing message and sign up button */
 .jumbotron {

@@ -40,22 +40,29 @@
 	          </button>
 	          <a class="navbar-brand" href="" ng-click="clearDropdowns()">Technical Support Handbook</a>
 	        </div>
-
+	        
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	          {# Select by Handbook #}
 	          <form class="navbar-form navbar-left">
-
+	            <div id="select-product" class="form-group">
+		            <ul class="nya-bs-select" ng-model="selectedHandbook" title="Select Handbook" data-live-search="true" size="20">
+		            	<li nya-bs-option="handbook in handbooks">
+		            		<a ng-click="selectHandbook(handbook)">{{ handbook }}</a>
+		            	</li>
+		            </ul>
+	            </div>
+	            {# Select by Product #}
 	            <div id="select-product" class="form-group">
 		            <ul class="nya-bs-select" ng-model="selectedProduct" title="Select Product" data-live-search="true" size="20">
 		            	<li nya-bs-option="product in products | orderBy:'portfolio' group by product.portfolio">
 		            		<span class="dropdown-header">{{$group}}</span>
-		            		<a ng-click="updatePortfolio(product)">{{ product.name }}</a>
+		            		<a ng-click="selectProduct(product)">{{ product.name }}</a>
 		            	</li>
 		            </ul>
 	            </div>
-
 	          </form>
-	          
 	        </div>
+
 	      </div>
 	    </nav>
 
@@ -64,11 +71,11 @@
 	        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 	      </p>
 	      <div id="content">
-		      <div class="jumbotron" ng-show="selectedProduct">
-		        <h1>{{selectedProduct.name}}</h1>
+		      <div class="jumbotron" ng-show="selectedProduct || selectedHandbook">
+		        <h1>{{selectedProduct.name || selectedHandbook }}</h1>
 		      </div>
 
-		    <div ng-if="!selectedProduct" class="container" style="width:70%;">
+		    <div ng-if="!selectedProduct && !selectedHandbook" class="container" style="width:70%;">
 		    	<h3 class="welcomeTitle">Welcome to Micro Focus Customer Care</h3>
 		    	<br>
 		    	<p>Thank you for choosing Micro Focus.</p>
@@ -86,7 +93,7 @@
 		    </div>
 
 		    {# Content #}
-			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+			{# <section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
 			  <h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
 			  <div class="sectionContent" ng-bind-html="sectionValue.content"></div>
 			  <section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
@@ -100,24 +107,62 @@
 			    </div>
 			  </section>
 			  <hr>
-			</section>
+			</section> #}
 
 			{# Same Content section as above, but with xeditable feature (permitting users to update content sections live within the site) #}
-			{# <section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
-				<h2><a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a></h2>
+			<section id="{{sectionKey | spaceless}}" ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu || selectedHandbook]">
+				{# Add a section #}
+				<div class='addSection'>
+					<button type="button" class="btn btn-outline-success" ng-click="addSection(sectionKey, selectedProduct.hbu || selectedHandbook)">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+						<span>Add Section</span>
+					</button>
+				</div>
+				<h2>
+					<a href="#{{sectionKey | spaceless}}" ng-bind-html="sectionKey" editable-text="sectionKey" ng-init="oldValue=sectionKey" onaftersave="changeSectionName($data, oldValue, selectedProduct.hbu || selectedHandbook)"></a>
+					<i class="clickable fa fa-trash-o" aria-hidden="true" ng-click="deleteSection(sectionKey, selectedProduct.hbu || selectedHandbook)"></i>
+				</h2>
 				<div class="sectionContent" ng-bind-html="sectionValue.content || ' ... '" editable-textarea="sectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()"></div>
-				<section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections">
+				{# Add a subsection #}
+				<div class='addSection addMinorSection'>
+					<button type="button" class="btn btn-outline-secondary" ng-click="addSubsection(null, selectedProduct.hbu || selectedHandbook, sectionKey)">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+						<span>Add Subsection</span>
+					</button>
+				</div>
+				<section id="{{subsectionKey | spaceless}}" class="subsection.heritage" ng-switch="subsectionValue.heritage" ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu || selectedHandbook][sectionKey].subsections">
 					<div ng-switch-when="true">
-						<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
+						<h4>
+							<a href="#{{subsectionKey | spaceless}}" ng-bind-html="subsectionKey" editable-text="subsectionKey" ng-init="oldValue=subsectionKey" onaftersave="changeSubsectionName($data, oldValue, selectedProduct.hbu || selectedHandbook, sectionKey)"></a>
+							<i class="clickable fa fa-trash-o" aria-hidden="true" ng-click="deleteSubsection(subsectionKey, sectionKey, selectedProduct.hbu || selectedHandbook)"></i>
+						</h4>
 						<div class="sectionContent" editable-textarea="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="$parent.contentList[selectedProduct.heritage][sectionKey].subsections[subsectionKey].content || ' ... '"></div>
 					</div>
 					<div ng-switch-default>
-						<h4><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></h4>
+						<h4>
+							<a href="#{{subsectionKey | spaceless}}" ng-bind-html="subsectionKey" editable-text="subsectionKey" ng-init="oldValue=subsectionKey" onaftersave="changeSubsectionName($data, oldValue, selectedProduct.hbu || selectedHandbook, sectionKey)"></a>
+							<i class="clickable fa fa-trash-o" aria-hidden="true" ng-click="deleteSubsection(subsectionKey, sectionKey, selectedProduct.hbu || selectedHandbook)"></i>
+						</h4>
 						<div class="sectionContent" editable-textarea="subsectionValue.content" e-rows="10" e-cols="80" onaftersave="updateContentData()" ng-bind-html="subsectionValue.content || ' ... '"></div>
+					</div>
+					{# Add a subsection #}
+					<div class='addSection addMinorSection'>
+						<button type="button" class="btn btn-outline-secondary" ng-click="addSubsection(subsectionKey, selectedProduct.hbu || selectedHandbook, sectionKey)">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+							<span>Add Subsection</span>
+						</button>
 					</div>
 				</section>
 				<hr>
-			</section> #}
+			</section>
+			{# Add a section (end) #}
+			<div ng-if="selectedProduct || selectedHandbook" class='addSection'>
+				<button type="button" class="btn btn-outline-success" ng-click="addEndSection(selectedProduct.hbu || selectedHandbook)">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+					<span>Add Section</span>
+				</button>
+			</div>
+			
 
 		    </div>
 	    </div><!--/.col-xs-12.col-sm-9-->
@@ -129,10 +174,10 @@
 
     <div id="nav-wrapper" class="col-xs-6 col-sm-3 scrollspy">
       <ul id="nav" class="nav nav-pills nav-stacked nav-section" data-spy="affix">
-        <li ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu]">
+        <li ng-repeat="(sectionKey, sectionValue) in contentList[selectedProduct.hbu || selectedHandbook]">
         	<a href="#{{sectionKey | spaceless}}">{{sectionKey}}</a>
         	<ul class="nav nav-subsection">
-        		<li ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu][sectionKey].subsections"><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></li>
+        		<li ng-repeat="(subsectionKey, subsectionValue) in $parent.contentList[selectedProduct.hbu || selectedHandbook][sectionKey].subsections"><a href="#{{subsectionKey | spaceless}}">{{subsectionKey}}</a></li>
         	</ul>
         </li>
       </ul>

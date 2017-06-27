@@ -8,6 +8,7 @@
   <title>[[ title ]]</title>
 
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="components/components-font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/dropdowns-enhancement.css" />
   <link rel="stylesheet" href="components/nya-bootstrap-select/dist/css/nya-bs-select.css" />
   <link rel="stylesheet" href="components/angular-xeditable/dist/css/xeditable.css" />
