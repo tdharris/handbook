@@ -1,0 +1,29 @@
+# Merge any committed changes from staging into master
+git checkout master		# make sure on master branch
+git pull			# verify local master is up to date
+git merge staging		# bring over staging branch changes
+git push			# push changes to remote master
+
+# File bug with IS&T Web Services
+# i.e. https://bugzilla.novell.com/show_bug.cgi?id=998229
+Classification:	Marketing Services
+Product:	Microfocus.com Development
+Component:	Support
+Version:	Global
+
+# Comment example:
+There has been a change in the handbook data.
+
+The change has been reflected in the master branch:
+https://github.com/tdharris/handbook/commit/c6e1fee649e8d00c7b8372dd1928fdcacf5b11de
+
+commit c6e1fee649e8d00c7b8372dd1928fdcacf5b11de
+Author: Tyler Harris <tylerdavidharris@gmail.com>
+Date:   Fri Sep 9 12:46:29 2016 -0600
+
+    3 phone number changes: All numbers were on the Attachmate support handbook in the “Open a Support Incident” subsection. Number changes were for New Zealand, Japan, and Hong Kong.
+
+
+# Courtesy email / assign bug to:
+# John Walter
+John.Walter@microfocus.com
