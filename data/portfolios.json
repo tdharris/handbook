@@ -35,11 +35,6 @@
         "hbu": "NV",
         "heritage": ""
     },{
-        "name": "AccuRev",
-        "portfolio": "Testing and Software Delivery",
-        "hbu": "MF",
-        "heritage": ""
-    }, {
         "name": "Acu4GL",
         "portfolio": "COBOL Development and Mainframe",
         "hbu": "MF",
@@ -469,10 +464,6 @@
         "portfolio": "Endpoint Management",
         "hbu": "NV"
     }, {
-        "name": "Desktop Containers (ZENworks Application Virtualization)",
-        "portfolio": "Endpoint Management",
-        "hbu": "NV"
-    }, {
         "name": "ZENworks Endpoint Security Management",
         "portfolio": "Endpoint Management",
         "hbu": "NV"
@@ -486,10 +477,6 @@
         "hbu": "NV"
     }, {
         "name": "Micro Focus Service Desk",
-        "portfolio": "Endpoint Management",
-        "hbu": "NV"
-    }, {
-        "name": "ALA/SLA Bundle-ZENworks",
         "portfolio": "Endpoint Management",
         "hbu": "NV"
     }, {
@@ -589,10 +576,6 @@
         "portfolio": "File and Network Services",
         "hbu": "NV"
     }, {
-        "name": "ALA/SLA Bundle",
-        "portfolio": "File and Network Services",
-        "hbu": "NV"
-    }, {
         "name": "Config Manager",
         "portfolio": "Security Management",
         "hbu": "NQ"
@@ -637,10 +620,6 @@
         "portfolio": "Data Center Management",
         "hbu": "NQ"
     }, {
-        "name": "Unix",
-        "portfolio": "Data Center Management",
-        "hbu": "NQ"
-    }, {
         "name": "VoIP",
         "portfolio": "Data Center Management",
         "hbu": "NQ"
@@ -658,14 +637,6 @@
         "hbu": "NV"
     }, {
         "name": "IDM Standard Edition",
-        "portfolio": "Identity and Access Management",
-        "hbu": "NV"
-    }, {
-        "name": "Other IDM",
-        "portfolio": "Identity and Access Management",
-        "hbu": "NV"
-    }, {
-        "name": "ALA/SLA Bundle - Identity",
         "portfolio": "Identity and Access Management",
         "hbu": "NV"
     }, {
