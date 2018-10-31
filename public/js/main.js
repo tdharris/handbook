@@ -77,9 +77,11 @@ app.controller('HandbookCtrl', ['$scope', '$sce', '$http', 'socket', function ($
     url: 'getContentData'
     }).then(function successCallback(response) {
       $scope.contentList = response.data;
-      // list of handbooks
       $scope.handbooks = Object.keys(response.data).map(function(key){
-        return key;
+        return {
+          key: key,
+          name: $scope.handbookLookup[key] || key
+        };
       });
     }, function errorCallback(response) {
       console.log(response);
@@ -94,6 +96,15 @@ app.controller('HandbookCtrl', ['$scope', '$sce', '$http', 'socket', function ($
     $scope.selectedProduct = "";
     $scope.selectedHandbook = "";
     $scope.handbookmap = {};
+  };
+
+  // list of handbooks
+  $scope.handbookLookup = {
+    'AQ': 'Attachmate',
+    'MF': 'Micro Focus',
+    'NQ': 'NetIQ',
+    'NV': 'Novell',
+    'Serena': 'Serena',
   };
 
   // Update data (send to server for saving)
@@ -114,7 +125,12 @@ app.controller('HandbookCtrl', ['$scope', '$sce', '$http', 'socket', function ($
 
   $scope.selectProduct = function(selectedProduct) {
     $scope.selectedPortfolio = selectedProduct.portfolio;
-    $scope.selectedHandbook = $scope.handbookmap[selectedProduct.name];
+    console.log('TYLER:', selectedProduct, $scope.handbookmap);
+    var key = $scope.handbookmap[selectedProduct.name];
+    $scope.selectedHandbook = {
+      key: key,
+      name: $scope.handbookLookup[key]
+    };
     console.log($scope.selectedHandbook, selectedProduct);
   };
 
