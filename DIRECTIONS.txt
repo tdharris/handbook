@@ -11,6 +11,9 @@ Product:	Microfocus.com Development
 Component:	Support
 Version:	Global
 
+# Title example:
+[Support Handbook] updated Australian phone number hNovell products
+
 # Comment example:
 There has been a change in the handbook data.
 
@@ -25,5 +28,5 @@ Date:   Fri Sep 9 12:46:29 2016 -0600
 
 
 # Courtesy email / assign bug to:
-# John Walter
-John.Walter@microfocus.com
+# John Muñoz 
+John Munoz <John.Munoz@microfocus.com>
